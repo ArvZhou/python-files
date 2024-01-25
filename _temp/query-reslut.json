@@ -1,0 +1,2605 @@
+{
+    "data": {
+        "viewer": {
+            "id": "b23842dbf9264844a652d0e1ec3f363c",
+            "project": {
+                "environment": {
+                    "id": "884896c1812b4122a4c54317fcbf2d4e",
+                    "name": "master",
+                    "displayName": "Master Environment",
+                    "contentModel": {
+                        "models": [
+                            {
+                                "id": "4dbde7072db8435a8386eb0f54deda7c",
+                                "apiId": "Asset",
+                                "apiIdPlural": "Assets",
+                                "displayName": "Asset",
+                                "isSystem": true,
+                                "fields": [
+                                    {
+                                        "id": "29b1211b37b743b8a97023f60030211a",
+                                        "apiId": "mimeType",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Mime type",
+                                        "parent": {
+                                            "apiId": "Asset",
+                                            "displayName": "Asset"
+                                        },
+                                        "stype": "STRING",
+                                        "isLocalized": true,
+                                        "formConfig": {
+                                            "id": "29b1211b-37b7-43b8-a970-23f60030211a-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "29b1211b-37b7-43b8-a970-23f60030211a-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "ca5e8bc95c784de5b6e8fb060b95735f",
+                                        "apiId": "size",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Size",
+                                        "parent": {
+                                            "apiId": "Asset",
+                                            "displayName": "Asset"
+                                        },
+                                        "stype": "FLOAT",
+                                        "isLocalized": true,
+                                        "formConfig": {
+                                            "id": "ca5e8bc9-5c78-4de5-b6e8-fb060b95735f-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "ca5e8bc9-5c78-4de5-b6e8-fb060b95735f-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "3c850bdf15e9461298797260cd27eb88",
+                                        "apiId": "scheduledIn",
+                                        "isSystem": true,
+                                        "isList": true,
+                                        "displayName": "Scheduled In",
+                                        "parent": {
+                                            "apiId": "Asset",
+                                            "displayName": "Asset"
+                                        },
+                                        "union": {
+                                            "memberTypes": [
+                                                {
+                                                    "parent": {
+                                                        "apiId": "Asset"
+                                                    }
+                                                },
+                                                {
+                                                    "parent": {
+                                                        "apiId": "Model20231213"
+                                                    }
+                                                },
+                                                {
+                                                    "parent": {
+                                                        "apiId": "Test"
+                                                    }
+                                                },
+                                                {
+                                                    "parent": {
+                                                        "apiId": "TestModels"
+                                                    }
+                                                },
+                                                {
+                                                    "parent": {
+                                                        "apiId": "NewTest"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "utype": "UNION"
+                                    },
+                                    {
+                                        "id": "cd1300aff1f743f1acd00e5d960993a6",
+                                        "apiId": "width",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Width",
+                                        "parent": {
+                                            "apiId": "Asset",
+                                            "displayName": "Asset"
+                                        },
+                                        "stype": "FLOAT",
+                                        "isLocalized": true,
+                                        "formConfig": {
+                                            "id": "cd1300af-f1f7-43f1-acd0-0e5d960993a6-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "cd1300af-f1f7-43f1-acd0-0e5d960993a6-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "d9ed696148de4e1eaa0fb1d049ae27bb",
+                                        "apiId": "height",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Height",
+                                        "parent": {
+                                            "apiId": "Asset",
+                                            "displayName": "Asset"
+                                        },
+                                        "stype": "FLOAT",
+                                        "isLocalized": true,
+                                        "formConfig": {
+                                            "id": "d9ed6961-48de-4e1e-aa0f-b1d049ae27bb-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "d9ed6961-48de-4e1e-aa0f-b1d049ae27bb-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "aba4ed43bd994eb4b92873eff3879c4a",
+                                        "apiId": "fileName",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "File name",
+                                        "parent": {
+                                            "apiId": "Asset",
+                                            "displayName": "Asset"
+                                        },
+                                        "stype": "STRING",
+                                        "isLocalized": true,
+                                        "formConfig": {
+                                            "id": "aba4ed43-bd99-4eb4-b928-73eff3879c4a-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "aba4ed43-bd99-4eb4-b928-73eff3879c4a-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "c703e34e18324372a03b8b7e2354f415",
+                                        "apiId": "handle",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Handle",
+                                        "parent": {
+                                            "apiId": "Asset",
+                                            "displayName": "Asset"
+                                        },
+                                        "stype": "STRING",
+                                        "isLocalized": true,
+                                        "formConfig": {
+                                            "id": "c703e34e-1832-4372-a03b-8b7e2354f415-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "c703e34e-1832-4372-a03b-8b7e2354f415-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "ae87cb034df049dabce83c7502477c03",
+                                        "apiId": "publishedBy",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Published By",
+                                        "parent": {
+                                            "apiId": "Asset",
+                                            "displayName": "Asset"
+                                        },
+                                        "udrtype": "RELATION"
+                                    },
+                                    {
+                                        "id": "159b2bf461384317af3f47b5488e61ab",
+                                        "apiId": "publishedAt",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Published At",
+                                        "parent": {
+                                            "apiId": "Asset",
+                                            "displayName": "Asset"
+                                        },
+                                        "stype": "DATETIME",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "159b2bf4-6138-4317-af3f-47b5488e61ab-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "159b2bf4-6138-4317-af3f-47b5488e61ab-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "acbdfe4b07714781b44b08037b3e43c5",
+                                        "apiId": "updatedBy",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Updated By",
+                                        "parent": {
+                                            "apiId": "Asset",
+                                            "displayName": "Asset"
+                                        },
+                                        "udrtype": "RELATION"
+                                    },
+                                    {
+                                        "id": "d94a2b4fc2c64e318288426bc4144285",
+                                        "apiId": "updatedAt",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Updated At",
+                                        "parent": {
+                                            "apiId": "Asset",
+                                            "displayName": "Asset"
+                                        },
+                                        "stype": "DATETIME",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "d94a2b4f-c2c6-4e31-8288-426bc4144285-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "d94a2b4f-c2c6-4e31-8288-426bc4144285-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "4e15649c2d624400a753ee8e245da4fd",
+                                        "apiId": "createdBy",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Created By",
+                                        "parent": {
+                                            "apiId": "Asset",
+                                            "displayName": "Asset"
+                                        },
+                                        "udrtype": "RELATION"
+                                    },
+                                    {
+                                        "id": "75c95c183bf947c294384fb017043d11",
+                                        "apiId": "createdAt",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Created At",
+                                        "parent": {
+                                            "apiId": "Asset",
+                                            "displayName": "Asset"
+                                        },
+                                        "stype": "DATETIME",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "75c95c18-3bf9-47c2-9438-4fb017043d11-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "75c95c18-3bf9-47c2-9438-4fb017043d11-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "fa8f921646f14cecbf1f6a665c84c0df",
+                                        "apiId": "id",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "ID",
+                                        "parent": {
+                                            "apiId": "Asset",
+                                            "displayName": "Asset"
+                                        },
+                                        "stype": "ID",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "fa8f9216-46f1-4cec-bf1f-6a665c84c0df-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "fa8f9216-46f1-4cec-bf1f-6a665c84c0df-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "9d78e883738440cfa1e1af255adf6d38",
+                                        "apiId": "imagePickerTestModels",
+                                        "isSystem": false,
+                                        "isList": true,
+                                        "displayName": "imagePickerTestModels",
+                                        "parent": {
+                                            "apiId": "Asset",
+                                            "displayName": "Asset"
+                                        },
+                                        "rtype": "RELATION",
+                                        "relatedField": {
+                                            "apiId": "imagePicker",
+                                            "displayName": "image picker"
+                                        }
+                                    },
+                                    {
+                                        "id": "8c1c65a9607a43fda3c3acf4802c0d7a",
+                                        "apiId": "testAssetPickerNewTest",
+                                        "isSystem": false,
+                                        "isList": true,
+                                        "displayName": "testAssetPickerNewTest",
+                                        "parent": {
+                                            "apiId": "Asset",
+                                            "displayName": "Asset"
+                                        },
+                                        "rtype": "RELATION",
+                                        "relatedField": {
+                                            "apiId": "testAssetPicker",
+                                            "displayName": "testAssetPicker"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "574d63250d3547479e894df7fc9d1c04",
+                                "apiId": "Test",
+                                "apiIdPlural": "Tests",
+                                "displayName": "test",
+                                "isSystem": false,
+                                "fields": [
+                                    {
+                                        "id": "b96f2335575740159a8e9f8d1e0cb417",
+                                        "apiId": "scheduledIn",
+                                        "isSystem": true,
+                                        "isList": true,
+                                        "displayName": "Scheduled In",
+                                        "parent": {
+                                            "apiId": "Test",
+                                            "displayName": "test"
+                                        },
+                                        "union": {
+                                            "memberTypes": [
+                                                {
+                                                    "parent": {
+                                                        "apiId": "Asset"
+                                                    }
+                                                },
+                                                {
+                                                    "parent": {
+                                                        "apiId": "Model20231213"
+                                                    }
+                                                },
+                                                {
+                                                    "parent": {
+                                                        "apiId": "Test"
+                                                    }
+                                                },
+                                                {
+                                                    "parent": {
+                                                        "apiId": "TestModels"
+                                                    }
+                                                },
+                                                {
+                                                    "parent": {
+                                                        "apiId": "NewTest"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "utype": "UNION"
+                                    },
+                                    {
+                                        "id": "7a5aad2745da4a14804245cdcb9473d9",
+                                        "apiId": "publishedBy",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Published By",
+                                        "parent": {
+                                            "apiId": "Test",
+                                            "displayName": "test"
+                                        },
+                                        "udrtype": "RELATION"
+                                    },
+                                    {
+                                        "id": "6c28c871ca8343c0b670be0a905739e5",
+                                        "apiId": "publishedAt",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Published At",
+                                        "parent": {
+                                            "apiId": "Test",
+                                            "displayName": "test"
+                                        },
+                                        "stype": "DATETIME",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "6c28c871-ca83-43c0-b670-be0a905739e5-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "6c28c871-ca83-43c0-b670-be0a905739e5-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "22a9567608c2462ea6be618cafc5e86d",
+                                        "apiId": "updatedBy",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Updated By",
+                                        "parent": {
+                                            "apiId": "Test",
+                                            "displayName": "test"
+                                        },
+                                        "udrtype": "RELATION"
+                                    },
+                                    {
+                                        "id": "d74e271e6cf243528ed554ab6a5f8cf5",
+                                        "apiId": "updatedAt",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Updated At",
+                                        "parent": {
+                                            "apiId": "Test",
+                                            "displayName": "test"
+                                        },
+                                        "stype": "DATETIME",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "d74e271e-6cf2-4352-8ed5-54ab6a5f8cf5-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "d74e271e-6cf2-4352-8ed5-54ab6a5f8cf5-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "a90d2a493340407c93de4341f015dbf4",
+                                        "apiId": "createdBy",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Created By",
+                                        "parent": {
+                                            "apiId": "Test",
+                                            "displayName": "test"
+                                        },
+                                        "udrtype": "RELATION"
+                                    },
+                                    {
+                                        "id": "ab4f22b8273e4c579d856a19afa4e550",
+                                        "apiId": "createdAt",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Created At",
+                                        "parent": {
+                                            "apiId": "Test",
+                                            "displayName": "test"
+                                        },
+                                        "stype": "DATETIME",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "ab4f22b8-273e-4c57-9d85-6a19afa4e550-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "ab4f22b8-273e-4c57-9d85-6a19afa4e550-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "cba71108b3cd4f698402cd0e3ca1e1d7",
+                                        "apiId": "id",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "ID",
+                                        "parent": {
+                                            "apiId": "Test",
+                                            "displayName": "test"
+                                        },
+                                        "stype": "ID",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "cba71108-b3cd-4f69-8402-cd0e3ca1e1d7-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "cba71108-b3cd-4f69-8402-cd0e3ca1e1d7-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "5560bde425bc4971a04329d5c44fa90c",
+                                        "apiId": "testComponent",
+                                        "isSystem": false,
+                                        "isList": false,
+                                        "displayName": "test component",
+                                        "parent": {
+                                            "apiId": "Test",
+                                            "displayName": "test"
+                                        },
+                                        "cutype": "COMPONENT_UNION",
+                                        "components": [
+                                            {
+                                                "apiId": "TestComponent"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "a18e3574121c429f87c7bcea6043518f",
+                                "apiId": "TestModels",
+                                "apiIdPlural": "PluralTestModels",
+                                "displayName": "testModels",
+                                "isSystem": false,
+                                "fields": [
+                                    {
+                                        "id": "139ec6ef59a746c1975adbbfcb033787",
+                                        "apiId": "scheduledIn",
+                                        "isSystem": true,
+                                        "isList": true,
+                                        "displayName": "Scheduled In",
+                                        "parent": {
+                                            "apiId": "TestModels",
+                                            "displayName": "testModels"
+                                        },
+                                        "union": {
+                                            "memberTypes": [
+                                                {
+                                                    "parent": {
+                                                        "apiId": "Asset"
+                                                    }
+                                                },
+                                                {
+                                                    "parent": {
+                                                        "apiId": "Model20231213"
+                                                    }
+                                                },
+                                                {
+                                                    "parent": {
+                                                        "apiId": "Test"
+                                                    }
+                                                },
+                                                {
+                                                    "parent": {
+                                                        "apiId": "TestModels"
+                                                    }
+                                                },
+                                                {
+                                                    "parent": {
+                                                        "apiId": "NewTest"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "utype": "UNION"
+                                    },
+                                    {
+                                        "id": "3da2de0bf11f498086ef1ad636e8f165",
+                                        "apiId": "publishedBy",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Published By",
+                                        "parent": {
+                                            "apiId": "TestModels",
+                                            "displayName": "testModels"
+                                        },
+                                        "udrtype": "RELATION"
+                                    },
+                                    {
+                                        "id": "4260ac8b9f39481e86f8228b85efda0b",
+                                        "apiId": "publishedAt",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Published At",
+                                        "parent": {
+                                            "apiId": "TestModels",
+                                            "displayName": "testModels"
+                                        },
+                                        "stype": "DATETIME",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "4260ac8b-9f39-481e-86f8-228b85efda0b-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "4260ac8b-9f39-481e-86f8-228b85efda0b-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "0c2f72452df941099d9a620227bd42b7",
+                                        "apiId": "updatedBy",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Updated By",
+                                        "parent": {
+                                            "apiId": "TestModels",
+                                            "displayName": "testModels"
+                                        },
+                                        "udrtype": "RELATION"
+                                    },
+                                    {
+                                        "id": "30006ad62d4d43c2a575a3c648d7af1d",
+                                        "apiId": "updatedAt",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Updated At",
+                                        "parent": {
+                                            "apiId": "TestModels",
+                                            "displayName": "testModels"
+                                        },
+                                        "stype": "DATETIME",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "30006ad6-2d4d-43c2-a575-a3c648d7af1d-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "30006ad6-2d4d-43c2-a575-a3c648d7af1d-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "6187aea376df42b68a43937c6f1c48b1",
+                                        "apiId": "createdBy",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Created By",
+                                        "parent": {
+                                            "apiId": "TestModels",
+                                            "displayName": "testModels"
+                                        },
+                                        "udrtype": "RELATION"
+                                    },
+                                    {
+                                        "id": "d0fb39a916f84d8db4408cfe1a4e8368",
+                                        "apiId": "createdAt",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Created At",
+                                        "parent": {
+                                            "apiId": "TestModels",
+                                            "displayName": "testModels"
+                                        },
+                                        "stype": "DATETIME",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "d0fb39a9-16f8-4d8d-b440-8cfe1a4e8368-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "d0fb39a9-16f8-4d8d-b440-8cfe1a4e8368-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "27ae1b9ff95c40ccb4b455f88bb3b652",
+                                        "apiId": "id",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "ID",
+                                        "parent": {
+                                            "apiId": "TestModels",
+                                            "displayName": "testModels"
+                                        },
+                                        "stype": "ID",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "27ae1b9f-f95c-40cc-b4b4-55f88bb3b652-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "27ae1b9f-f95c-40cc-b4b4-55f88bb3b652-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "915acff99b634ebaa06a94cd65dec661",
+                                        "apiId": "dogName",
+                                        "isSystem": false,
+                                        "isList": false,
+                                        "displayName": "Dog name",
+                                        "parent": {
+                                            "apiId": "TestModels",
+                                            "displayName": "testModels"
+                                        },
+                                        "stype": "STRING",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "915acff9-9b63-4eba-a06a-94cd65dec661-form",
+                                            "renderer": "GCMS_MULTI_LINE",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "915acff9-9b63-4eba-a06a-94cd65dec661-table",
+                                            "renderer": "GCMS_MULTI_LINE"
+                                        }
+                                    },
+                                    {
+                                        "id": "132f2606f5394ad4987cb0fae62377b4",
+                                        "apiId": "testComponent2",
+                                        "isSystem": false,
+                                        "isList": false,
+                                        "displayName": "test component2",
+                                        "parent": {
+                                            "apiId": "TestModels",
+                                            "displayName": "testModels"
+                                        },
+                                        "ctype": "COMPONENT",
+                                        "component": {
+                                            "apiId": "TestComponent2"
+                                        }
+                                    },
+                                    {
+                                        "id": "06d11f3e12a2437cbd29943be3c10b5c",
+                                        "apiId": "article",
+                                        "isSystem": false,
+                                        "isList": false,
+                                        "displayName": "Article",
+                                        "parent": {
+                                            "apiId": "TestModels",
+                                            "displayName": "testModels"
+                                        },
+                                        "stype": "STRING",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "06d11f3e-12a2-437c-bd29-943be3c10b5c-form",
+                                            "renderer": "CUSTOM",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": {
+                                                "id": "cf9fbddd6183490399cfbb5fd2040ef3",
+                                                "name": "epic-ckeditor",
+                                                "apiId": "epic-ckeditor",
+                                                "config": {},
+                                                "src": "http://localhost:3000/ckeditor/field",
+                                                "features": [
+                                                    "FieldRenderer"
+                                                ]
+                                            }
+                                        },
+                                        "tableConfig": {
+                                            "id": "06d11f3e-12a2-437c-bd29-943be3c10b5c-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "369be640f297439c9cbb910b3987f141",
+                                        "apiId": "note",
+                                        "isSystem": false,
+                                        "isList": false,
+                                        "displayName": "note",
+                                        "parent": {
+                                            "apiId": "TestModels",
+                                            "displayName": "testModels"
+                                        },
+                                        "stype": "STRING",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "369be640-f297-439c-9cbb-910b3987f141-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "369be640-f297-439c-9cbb-910b3987f141-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "e14a785894c140ee992d695fbab4fdec",
+                                        "apiId": "imagePicker",
+                                        "isSystem": false,
+                                        "isList": false,
+                                        "displayName": "image picker",
+                                        "parent": {
+                                            "apiId": "TestModels",
+                                            "displayName": "testModels"
+                                        },
+                                        "rtype": "ASSET",
+                                        "relatedField": {
+                                            "apiId": "imagePickerTestModels",
+                                            "displayName": "imagePickerTestModels"
+                                        }
+                                    },
+                                    {
+                                        "id": "0e5fe7ac775c4a00974ba4f944306615",
+                                        "apiId": "avatar",
+                                        "isSystem": false,
+                                        "isList": false,
+                                        "displayName": "Avatar",
+                                        "parent": {
+                                            "apiId": "TestModels",
+                                            "displayName": "testModels"
+                                        },
+                                        "stype": "JSON",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "0e5fe7ac-775c-4a00-974b-a4f944306615-form",
+                                            "renderer": "CUSTOM",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": {
+                                                "id": "c5e01ca146b443349b04e10be145e625",
+                                                "name": "epic-asset-picker",
+                                                "apiId": "epicAssetPickerLocal",
+                                                "config": {},
+                                                "src": "http://localhost:3000/epic-asset-picker/field",
+                                                "features": [
+                                                    "ListRenderer",
+                                                    "FieldRenderer"
+                                                ]
+                                            }
+                                        },
+                                        "tableConfig": {
+                                            "id": "0e5fe7ac-775c-4a00-974b-a4f944306615-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "760eaf88e7a84261b2c9460467485ab9",
+                                        "apiId": "dailyNote",
+                                        "isSystem": false,
+                                        "isList": false,
+                                        "displayName": "daily_note",
+                                        "parent": {
+                                            "apiId": "TestModels",
+                                            "displayName": "testModels"
+                                        },
+                                        "stype": "RICHTEXT",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "760eaf88-e7a8-4261-b2c9-460467485ab9-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "760eaf88-e7a8-4261-b2c9-460467485ab9-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "6a81bd30e73f4b10956b8a5299ccbaf5",
+                                "apiId": "QueryModel",
+                                "apiIdPlural": "QueryModels",
+                                "displayName": "Query",
+                                "isSystem": true,
+                                "fields": []
+                            },
+                            {
+                                "id": "65e7b4bf31dc4ad983ae53ee34316901",
+                                "apiId": "ScheduledOperation",
+                                "apiIdPlural": "ScheduledOperations",
+                                "displayName": "Scheduled Operation",
+                                "isSystem": true,
+                                "fields": [
+                                    {
+                                        "id": "1a285aa6bd7945659d1aeaf2a28f5d26",
+                                        "apiId": "release",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Release",
+                                        "parent": {
+                                            "apiId": "ScheduledOperation",
+                                            "displayName": "Scheduled Operation"
+                                        },
+                                        "rtype": "RELATION",
+                                        "relatedField": {
+                                            "apiId": "operations",
+                                            "displayName": "Scheduled Operations"
+                                        }
+                                    },
+                                    {
+                                        "id": "c290079bbd7648ed9ed384c4ec6e0bac",
+                                        "apiId": "affectedDocuments",
+                                        "isSystem": true,
+                                        "isList": true,
+                                        "displayName": "Affected Documents",
+                                        "parent": {
+                                            "apiId": "ScheduledOperation",
+                                            "displayName": "Scheduled Operation"
+                                        },
+                                        "union": {
+                                            "memberTypes": [
+                                                {
+                                                    "parent": {
+                                                        "apiId": "Asset"
+                                                    }
+                                                },
+                                                {
+                                                    "parent": {
+                                                        "apiId": "Model20231213"
+                                                    }
+                                                },
+                                                {
+                                                    "parent": {
+                                                        "apiId": "Test"
+                                                    }
+                                                },
+                                                {
+                                                    "parent": {
+                                                        "apiId": "TestModels"
+                                                    }
+                                                },
+                                                {
+                                                    "parent": {
+                                                        "apiId": "NewTest"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "utype": "UNION"
+                                    },
+                                    {
+                                        "id": "0ae2b6cac9f541e5820d9c76c3d71bdd",
+                                        "apiId": "rawPayload",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Raw Payload",
+                                        "parent": {
+                                            "apiId": "ScheduledOperation",
+                                            "displayName": "Scheduled Operation"
+                                        },
+                                        "stype": "JSON",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "0ae2b6ca-c9f5-41e5-820d-9c76c3d71bdd-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "0ae2b6ca-c9f5-41e5-820d-9c76c3d71bdd-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "ec3a2888be95400b954e03f46704ce54",
+                                        "apiId": "errorMessage",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Error Message",
+                                        "parent": {
+                                            "apiId": "ScheduledOperation",
+                                            "displayName": "Scheduled Operation"
+                                        },
+                                        "stype": "STRING",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "ec3a2888-be95-400b-954e-03f46704ce54-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "ec3a2888-be95-400b-954e-03f46704ce54-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "1236be2280ed42e581cfa40eaebfb792",
+                                        "apiId": "description",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Description",
+                                        "parent": {
+                                            "apiId": "ScheduledOperation",
+                                            "displayName": "Scheduled Operation"
+                                        },
+                                        "stype": "STRING",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "1236be22-80ed-42e5-81cf-a40eaebfb792-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "1236be22-80ed-42e5-81cf-a40eaebfb792-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "b0c997ae4e674fc48569b07eaf0e144a",
+                                        "apiId": "status",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Status",
+                                        "parent": {
+                                            "apiId": "ScheduledOperation",
+                                            "displayName": "Scheduled Operation"
+                                        },
+                                        "etype": "ENUMERATION"
+                                    },
+                                    {
+                                        "id": "63bde1b029f4414eaefd6fe2facdf7b4",
+                                        "apiId": "publishedBy",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Published By",
+                                        "parent": {
+                                            "apiId": "ScheduledOperation",
+                                            "displayName": "Scheduled Operation"
+                                        },
+                                        "udrtype": "RELATION"
+                                    },
+                                    {
+                                        "id": "83af1028abe44d43bda5a08825eac665",
+                                        "apiId": "publishedAt",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Published At",
+                                        "parent": {
+                                            "apiId": "ScheduledOperation",
+                                            "displayName": "Scheduled Operation"
+                                        },
+                                        "stype": "DATETIME",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "83af1028-abe4-4d43-bda5-a08825eac665-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "83af1028-abe4-4d43-bda5-a08825eac665-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "f0e1528320374598bdb2e6142b6cb280",
+                                        "apiId": "updatedBy",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Updated By",
+                                        "parent": {
+                                            "apiId": "ScheduledOperation",
+                                            "displayName": "Scheduled Operation"
+                                        },
+                                        "udrtype": "RELATION"
+                                    },
+                                    {
+                                        "id": "d60f2661f2a54cad8376d69719145ba9",
+                                        "apiId": "updatedAt",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Updated At",
+                                        "parent": {
+                                            "apiId": "ScheduledOperation",
+                                            "displayName": "Scheduled Operation"
+                                        },
+                                        "stype": "DATETIME",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "d60f2661-f2a5-4cad-8376-d69719145ba9-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "d60f2661-f2a5-4cad-8376-d69719145ba9-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "e01eff65d2d9409a9a5c94583b4b58b2",
+                                        "apiId": "createdBy",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Created By",
+                                        "parent": {
+                                            "apiId": "ScheduledOperation",
+                                            "displayName": "Scheduled Operation"
+                                        },
+                                        "udrtype": "RELATION"
+                                    },
+                                    {
+                                        "id": "673b757522564ff5a612aeb3905fac94",
+                                        "apiId": "createdAt",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Created At",
+                                        "parent": {
+                                            "apiId": "ScheduledOperation",
+                                            "displayName": "Scheduled Operation"
+                                        },
+                                        "stype": "DATETIME",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "673b7575-2256-4ff5-a612-aeb3905fac94-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "673b7575-2256-4ff5-a612-aeb3905fac94-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "7f42cb863dc74936b8c7c7358e5436aa",
+                                        "apiId": "id",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "ID",
+                                        "parent": {
+                                            "apiId": "ScheduledOperation",
+                                            "displayName": "Scheduled Operation"
+                                        },
+                                        "stype": "ID",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "7f42cb86-3dc7-4936-b8c7-c7358e5436aa-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "7f42cb86-3dc7-4936-b8c7-c7358e5436aa-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "83fded5d4e93458d92c977ecbf000963",
+                                "apiId": "ScheduledRelease",
+                                "apiIdPlural": "ScheduledReleases",
+                                "displayName": "Scheduled Release",
+                                "isSystem": true,
+                                "fields": [
+                                    {
+                                        "id": "045fcb42f20c4327ac804f9f8ae996aa",
+                                        "apiId": "operations",
+                                        "isSystem": true,
+                                        "isList": true,
+                                        "displayName": "Scheduled Operations",
+                                        "parent": {
+                                            "apiId": "ScheduledRelease",
+                                            "displayName": "Scheduled Release"
+                                        },
+                                        "rtype": "RELATION",
+                                        "relatedField": {
+                                            "apiId": "release",
+                                            "displayName": "Release"
+                                        }
+                                    },
+                                    {
+                                        "id": "369b2ae5090947d69298b1cf8ecac314",
+                                        "apiId": "releaseAt",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Release At",
+                                        "parent": {
+                                            "apiId": "ScheduledRelease",
+                                            "displayName": "Scheduled Release"
+                                        },
+                                        "stype": "DATETIME",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "369b2ae5-0909-47d6-9298-b1cf8ecac314-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "369b2ae5-0909-47d6-9298-b1cf8ecac314-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "373f02e93ed3403d8aced1e19f73d878",
+                                        "apiId": "status",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Status",
+                                        "parent": {
+                                            "apiId": "ScheduledRelease",
+                                            "displayName": "Scheduled Release"
+                                        },
+                                        "etype": "ENUMERATION"
+                                    },
+                                    {
+                                        "id": "0109fe36d9eb444fa39eb0eb5b3783d8",
+                                        "apiId": "isImplicit",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Is Implicit",
+                                        "parent": {
+                                            "apiId": "ScheduledRelease",
+                                            "displayName": "Scheduled Release"
+                                        },
+                                        "stype": "BOOLEAN",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "0109fe36-d9eb-444f-a39e-b0eb5b3783d8-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "0109fe36-d9eb-444f-a39e-b0eb5b3783d8-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "72d0ebab13be4637ae4a40b6b30c3053",
+                                        "apiId": "isActive",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Is Active",
+                                        "parent": {
+                                            "apiId": "ScheduledRelease",
+                                            "displayName": "Scheduled Release"
+                                        },
+                                        "stype": "BOOLEAN",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "72d0ebab-13be-4637-ae4a-40b6b30c3053-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "72d0ebab-13be-4637-ae4a-40b6b30c3053-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "6850ee1ae32f41d6bbcf5c09ee940f50",
+                                        "apiId": "errorMessage",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Error Message",
+                                        "parent": {
+                                            "apiId": "ScheduledRelease",
+                                            "displayName": "Scheduled Release"
+                                        },
+                                        "stype": "STRING",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "6850ee1a-e32f-41d6-bbcf-5c09ee940f50-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "6850ee1a-e32f-41d6-bbcf-5c09ee940f50-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "a3fd21ca2856434a9fbbf5f6512413fd",
+                                        "apiId": "description",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Description",
+                                        "parent": {
+                                            "apiId": "ScheduledRelease",
+                                            "displayName": "Scheduled Release"
+                                        },
+                                        "stype": "STRING",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "a3fd21ca-2856-434a-9fbb-f5f6512413fd-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "a3fd21ca-2856-434a-9fbb-f5f6512413fd-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "f1cd322286404ee586fe60ff25453a74",
+                                        "apiId": "title",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Title",
+                                        "parent": {
+                                            "apiId": "ScheduledRelease",
+                                            "displayName": "Scheduled Release"
+                                        },
+                                        "stype": "STRING",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "f1cd3222-8640-4ee5-86fe-60ff25453a74-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "f1cd3222-8640-4ee5-86fe-60ff25453a74-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "f3d087b06fbc4ce18db5c944c23f335c",
+                                        "apiId": "publishedBy",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Published By",
+                                        "parent": {
+                                            "apiId": "ScheduledRelease",
+                                            "displayName": "Scheduled Release"
+                                        },
+                                        "udrtype": "RELATION"
+                                    },
+                                    {
+                                        "id": "545bf294eff3465ea8407d16851ff051",
+                                        "apiId": "publishedAt",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Published At",
+                                        "parent": {
+                                            "apiId": "ScheduledRelease",
+                                            "displayName": "Scheduled Release"
+                                        },
+                                        "stype": "DATETIME",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "545bf294-eff3-465e-a840-7d16851ff051-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "545bf294-eff3-465e-a840-7d16851ff051-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "57eceed97a0e40bea4fa8af18944f795",
+                                        "apiId": "updatedBy",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Updated By",
+                                        "parent": {
+                                            "apiId": "ScheduledRelease",
+                                            "displayName": "Scheduled Release"
+                                        },
+                                        "udrtype": "RELATION"
+                                    },
+                                    {
+                                        "id": "e8a929af4c884ec8ae0afbc406b577cd",
+                                        "apiId": "updatedAt",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Updated At",
+                                        "parent": {
+                                            "apiId": "ScheduledRelease",
+                                            "displayName": "Scheduled Release"
+                                        },
+                                        "stype": "DATETIME",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "e8a929af-4c88-4ec8-ae0a-fbc406b577cd-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "e8a929af-4c88-4ec8-ae0a-fbc406b577cd-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "51bc9e7573b740df9a95f9a9845bb286",
+                                        "apiId": "createdBy",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Created By",
+                                        "parent": {
+                                            "apiId": "ScheduledRelease",
+                                            "displayName": "Scheduled Release"
+                                        },
+                                        "udrtype": "RELATION"
+                                    },
+                                    {
+                                        "id": "66f7855458694575a24aafa11c4cb00c",
+                                        "apiId": "createdAt",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Created At",
+                                        "parent": {
+                                            "apiId": "ScheduledRelease",
+                                            "displayName": "Scheduled Release"
+                                        },
+                                        "stype": "DATETIME",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "66f78554-5869-4575-a24a-afa11c4cb00c-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "66f78554-5869-4575-a24a-afa11c4cb00c-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "82d48d11063a4a39b8bff4976bf3a426",
+                                        "apiId": "id",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "ID",
+                                        "parent": {
+                                            "apiId": "ScheduledRelease",
+                                            "displayName": "Scheduled Release"
+                                        },
+                                        "stype": "ID",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "82d48d11-063a-4a39-b8bf-f4976bf3a426-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "82d48d11-063a-4a39-b8bf-f4976bf3a426-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "061e7cdf53de4fa087106beb6522ddba",
+                                "apiId": "User",
+                                "apiIdPlural": "Users",
+                                "displayName": "User",
+                                "isSystem": true,
+                                "fields": [
+                                    {
+                                        "id": "fd7295243f9143da8b4e36a6447336dc",
+                                        "apiId": "isActive",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "IsActive",
+                                        "parent": {
+                                            "apiId": "User",
+                                            "displayName": "User"
+                                        },
+                                        "stype": "BOOLEAN",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "fd729524-3f91-43da-8b4e-36a6447336dc-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "fd729524-3f91-43da-8b4e-36a6447336dc-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "bbc58356610d4750a964c74797720cbf",
+                                        "apiId": "defaults",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Defaults",
+                                        "parent": {
+                                            "apiId": "User",
+                                            "displayName": "User"
+                                        },
+                                        "stype": "JSON",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "bbc58356-610d-4750-a964-c74797720cbf-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "bbc58356-610d-4750-a964-c74797720cbf-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "a5a267e01df541f29c10c48aa3803b51",
+                                        "apiId": "kind",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Kind",
+                                        "parent": {
+                                            "apiId": "User",
+                                            "displayName": "User"
+                                        },
+                                        "etype": "ENUMERATION"
+                                    },
+                                    {
+                                        "id": "c75ba62e1a6148749d71269b36076956",
+                                        "apiId": "picture",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Picture",
+                                        "parent": {
+                                            "apiId": "User",
+                                            "displayName": "User"
+                                        },
+                                        "stype": "STRING",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "c75ba62e-1a61-4874-9d71-269b36076956-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "c75ba62e-1a61-4874-9d71-269b36076956-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "f679d9d7544940a591cf57478fd9573b",
+                                        "apiId": "name",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Name",
+                                        "parent": {
+                                            "apiId": "User",
+                                            "displayName": "User"
+                                        },
+                                        "stype": "STRING",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "f679d9d7-5449-40a5-91cf-57478fd9573b-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "f679d9d7-5449-40a5-91cf-57478fd9573b-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "6906d238944341b1b474761615577173",
+                                        "apiId": "publishedAt",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Published At",
+                                        "parent": {
+                                            "apiId": "User",
+                                            "displayName": "User"
+                                        },
+                                        "stype": "DATETIME",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "6906d238-9443-41b1-b474-761615577173-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "6906d238-9443-41b1-b474-761615577173-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "278eae3380c54a66af055ebb7f441f32",
+                                        "apiId": "updatedAt",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Updated At",
+                                        "parent": {
+                                            "apiId": "User",
+                                            "displayName": "User"
+                                        },
+                                        "stype": "DATETIME",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "278eae33-80c5-4a66-af05-5ebb7f441f32-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "278eae33-80c5-4a66-af05-5ebb7f441f32-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "86f4d7450e3d4b5db7c74db9ddd43ed4",
+                                        "apiId": "createdAt",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Created At",
+                                        "parent": {
+                                            "apiId": "User",
+                                            "displayName": "User"
+                                        },
+                                        "stype": "DATETIME",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "86f4d745-0e3d-4b5d-b7c7-4db9ddd43ed4-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "86f4d745-0e3d-4b5d-b7c7-4db9ddd43ed4-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "b6505133f1e94500a91f4e293761a2a3",
+                                        "apiId": "id",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "ID",
+                                        "parent": {
+                                            "apiId": "User",
+                                            "displayName": "User"
+                                        },
+                                        "stype": "ID",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "b6505133-f1e9-4500-a91f-4e293761a2a3-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "b6505133-f1e9-4500-a91f-4e293761a2a3-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "f8ad650136d3437d8f3aa2d883a6fc8d",
+                                "apiId": "NewTest",
+                                "apiIdPlural": "NewTests",
+                                "displayName": "newTest",
+                                "isSystem": false,
+                                "fields": [
+                                    {
+                                        "id": "82b7187406924a278aaccd49a3764cfc",
+                                        "apiId": "scheduledIn",
+                                        "isSystem": true,
+                                        "isList": true,
+                                        "displayName": "Scheduled In",
+                                        "parent": {
+                                            "apiId": "NewTest",
+                                            "displayName": "newTest"
+                                        },
+                                        "union": {
+                                            "memberTypes": [
+                                                {
+                                                    "parent": {
+                                                        "apiId": "Asset"
+                                                    }
+                                                },
+                                                {
+                                                    "parent": {
+                                                        "apiId": "Model20231213"
+                                                    }
+                                                },
+                                                {
+                                                    "parent": {
+                                                        "apiId": "Test"
+                                                    }
+                                                },
+                                                {
+                                                    "parent": {
+                                                        "apiId": "TestModels"
+                                                    }
+                                                },
+                                                {
+                                                    "parent": {
+                                                        "apiId": "NewTest"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "utype": "UNION"
+                                    },
+                                    {
+                                        "id": "9e383ada2c64460b9518552509ac67fe",
+                                        "apiId": "publishedBy",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Published By",
+                                        "parent": {
+                                            "apiId": "NewTest",
+                                            "displayName": "newTest"
+                                        },
+                                        "udrtype": "RELATION"
+                                    },
+                                    {
+                                        "id": "e1d70a72d5e045d9b01422b1f3be2c59",
+                                        "apiId": "publishedAt",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Published At",
+                                        "parent": {
+                                            "apiId": "NewTest",
+                                            "displayName": "newTest"
+                                        },
+                                        "stype": "DATETIME",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "e1d70a72-d5e0-45d9-b014-22b1f3be2c59-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "e1d70a72-d5e0-45d9-b014-22b1f3be2c59-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "0f550e73eace4cf6899d6e83ade4d883",
+                                        "apiId": "updatedBy",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Updated By",
+                                        "parent": {
+                                            "apiId": "NewTest",
+                                            "displayName": "newTest"
+                                        },
+                                        "udrtype": "RELATION"
+                                    },
+                                    {
+                                        "id": "5e5db55e015c4e39848631a8f15b36f5",
+                                        "apiId": "updatedAt",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Updated At",
+                                        "parent": {
+                                            "apiId": "NewTest",
+                                            "displayName": "newTest"
+                                        },
+                                        "stype": "DATETIME",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "5e5db55e-015c-4e39-8486-31a8f15b36f5-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "5e5db55e-015c-4e39-8486-31a8f15b36f5-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "30c77159d2164da183969a34f82bce6f",
+                                        "apiId": "createdBy",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Created By",
+                                        "parent": {
+                                            "apiId": "NewTest",
+                                            "displayName": "newTest"
+                                        },
+                                        "udrtype": "RELATION"
+                                    },
+                                    {
+                                        "id": "21f044bc16334b119414a8e38ef36d14",
+                                        "apiId": "createdAt",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Created At",
+                                        "parent": {
+                                            "apiId": "NewTest",
+                                            "displayName": "newTest"
+                                        },
+                                        "stype": "DATETIME",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "21f044bc-1633-4b11-9414-a8e38ef36d14-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "21f044bc-1633-4b11-9414-a8e38ef36d14-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "fb11899319e8456b9a3c24dd21f28618",
+                                        "apiId": "id",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "ID",
+                                        "parent": {
+                                            "apiId": "NewTest",
+                                            "displayName": "newTest"
+                                        },
+                                        "stype": "ID",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "fb118993-19e8-456b-9a3c-24dd21f28618-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "fb118993-19e8-456b-9a3c-24dd21f28618-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "7b6e86ffe6784dc2885c0ffa1cb7a5c6",
+                                        "apiId": "avatar",
+                                        "isSystem": false,
+                                        "isList": true,
+                                        "displayName": "Avatar",
+                                        "parent": {
+                                            "apiId": "NewTest",
+                                            "displayName": "newTest"
+                                        },
+                                        "stype": "JSON",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "7b6e86ff-e678-4dc2-885c-0ffa1cb7a5c6-form",
+                                            "renderer": "CUSTOM",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": {
+                                                "id": "c5e01ca146b443349b04e10be145e625",
+                                                "name": "epic-asset-picker",
+                                                "apiId": "epicAssetPickerLocal",
+                                                "config": {},
+                                                "src": "http://localhost:3000/epic-asset-picker/field",
+                                                "features": [
+                                                    "ListRenderer",
+                                                    "FieldRenderer"
+                                                ]
+                                            }
+                                        },
+                                        "tableConfig": {
+                                            "id": "7b6e86ff-e678-4dc2-885c-0ffa1cb7a5c6-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "5711dbb974514c78bc658c45c9a45913",
+                                        "apiId": "testAssetPicker",
+                                        "isSystem": false,
+                                        "isList": true,
+                                        "displayName": "testAssetPicker",
+                                        "parent": {
+                                            "apiId": "NewTest",
+                                            "displayName": "newTest"
+                                        },
+                                        "rtype": "ASSET",
+                                        "relatedField": {
+                                            "apiId": "testAssetPickerNewTest",
+                                            "displayName": "testAssetPickerNewTest"
+                                        }
+                                    },
+                                    {
+                                        "id": "0fd89dcb120146a7875e00dd4e3d4a79",
+                                        "apiId": "environment",
+                                        "isSystem": false,
+                                        "isList": false,
+                                        "displayName": "environment",
+                                        "parent": {
+                                            "apiId": "NewTest",
+                                            "displayName": "newTest"
+                                        },
+                                        "stype": "STRING",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "0fd89dcb-1201-46a7-875e-00dd4e3d4a79-form",
+                                            "renderer": "CUSTOM",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": {
+                                                "id": "24b32a86967a434aad09c0089755ed60",
+                                                "name": "epic tags",
+                                                "apiId": "epictags",
+                                                "config": {},
+                                                "src": "http://localhost:3000/epic-tags/field",
+                                                "features": [
+                                                    "FieldRenderer"
+                                                ]
+                                            }
+                                        },
+                                        "tableConfig": {
+                                            "id": "0fd89dcb-1201-46a7-875e-00dd4e3d4a79-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "c31a53b2be874c2ebf6df66b97386422",
+                                        "apiId": "startDate",
+                                        "isSystem": false,
+                                        "isList": false,
+                                        "displayName": "startDate",
+                                        "parent": {
+                                            "apiId": "NewTest",
+                                            "displayName": "newTest"
+                                        },
+                                        "stype": "DATE",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "c31a53b2-be87-4c2e-bf6d-f66b97386422-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "c31a53b2-be87-4c2e-bf6d-f66b97386422-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "b0c5591fb90b4d66a8479b824681cb1b",
+                                        "apiId": "animal",
+                                        "isSystem": false,
+                                        "isList": false,
+                                        "displayName": "Animal",
+                                        "parent": {
+                                            "apiId": "NewTest",
+                                            "displayName": "newTest"
+                                        },
+                                        "etype": "ENUMERATION"
+                                    },
+                                    {
+                                        "id": "c7612a3354d3466d83d4abe99523f2c0",
+                                        "apiId": "note",
+                                        "isSystem": false,
+                                        "isList": false,
+                                        "displayName": "note",
+                                        "parent": {
+                                            "apiId": "NewTest",
+                                            "displayName": "newTest"
+                                        },
+                                        "stype": "STRING",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "c7612a33-54d3-466d-83d4-abe99523f2c0-form",
+                                            "renderer": "GCMS_SINGLE_LINE",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "c7612a33-54d3-466d-83d4-abe99523f2c0-table",
+                                            "renderer": "GCMS_SINGLE_LINE"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "59bc1093ea8449b396ff0e0f668cdb96",
+                                "apiId": "Model20231213",
+                                "apiIdPlural": "Model20231213S",
+                                "displayName": "\ud83c\udf0c Model2023-12-13",
+                                "isSystem": false,
+                                "fields": [
+                                    {
+                                        "id": "080dd7b367be4968b8d5110d10300273",
+                                        "apiId": "scheduledIn",
+                                        "isSystem": true,
+                                        "isList": true,
+                                        "displayName": "Scheduled In",
+                                        "parent": {
+                                            "apiId": "Model20231213",
+                                            "displayName": "\ud83c\udf0c Model2023-12-13"
+                                        },
+                                        "union": {
+                                            "memberTypes": [
+                                                {
+                                                    "parent": {
+                                                        "apiId": "Asset"
+                                                    }
+                                                },
+                                                {
+                                                    "parent": {
+                                                        "apiId": "Model20231213"
+                                                    }
+                                                },
+                                                {
+                                                    "parent": {
+                                                        "apiId": "Test"
+                                                    }
+                                                },
+                                                {
+                                                    "parent": {
+                                                        "apiId": "TestModels"
+                                                    }
+                                                },
+                                                {
+                                                    "parent": {
+                                                        "apiId": "NewTest"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "utype": "UNION"
+                                    },
+                                    {
+                                        "id": "8e20b85a24c446d78b261aa84ddc1662",
+                                        "apiId": "publishedBy",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Published By",
+                                        "parent": {
+                                            "apiId": "Model20231213",
+                                            "displayName": "\ud83c\udf0c Model2023-12-13"
+                                        },
+                                        "udrtype": "RELATION"
+                                    },
+                                    {
+                                        "id": "958bf2f810854e90bf46fa1437a1bc80",
+                                        "apiId": "publishedAt",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Published At",
+                                        "parent": {
+                                            "apiId": "Model20231213",
+                                            "displayName": "\ud83c\udf0c Model2023-12-13"
+                                        },
+                                        "stype": "DATETIME",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "958bf2f8-1085-4e90-bf46-fa1437a1bc80-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "958bf2f8-1085-4e90-bf46-fa1437a1bc80-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "63e1e3fa8fe142489ce2da34e64e0b46",
+                                        "apiId": "updatedBy",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Updated By",
+                                        "parent": {
+                                            "apiId": "Model20231213",
+                                            "displayName": "\ud83c\udf0c Model2023-12-13"
+                                        },
+                                        "udrtype": "RELATION"
+                                    },
+                                    {
+                                        "id": "163d26999ee748c1bd2a34d5db64f78e",
+                                        "apiId": "updatedAt",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Updated At",
+                                        "parent": {
+                                            "apiId": "Model20231213",
+                                            "displayName": "\ud83c\udf0c Model2023-12-13"
+                                        },
+                                        "stype": "DATETIME",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "163d2699-9ee7-48c1-bd2a-34d5db64f78e-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "163d2699-9ee7-48c1-bd2a-34d5db64f78e-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "b6fa10eb9fb14280b1c5bd5fee2ff3a0",
+                                        "apiId": "createdBy",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Created By",
+                                        "parent": {
+                                            "apiId": "Model20231213",
+                                            "displayName": "\ud83c\udf0c Model2023-12-13"
+                                        },
+                                        "udrtype": "RELATION"
+                                    },
+                                    {
+                                        "id": "c87136f08cfc422ea725ac7a3746cdd3",
+                                        "apiId": "createdAt",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "Created At",
+                                        "parent": {
+                                            "apiId": "Model20231213",
+                                            "displayName": "\ud83c\udf0c Model2023-12-13"
+                                        },
+                                        "stype": "DATETIME",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "c87136f0-8cfc-422e-a725-ac7a3746cdd3-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "c87136f0-8cfc-422e-a725-ac7a3746cdd3-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "25908fa6e26b42d59ae01ef24b1b4483",
+                                        "apiId": "id",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "ID",
+                                        "parent": {
+                                            "apiId": "Model20231213",
+                                            "displayName": "\ud83c\udf0c Model2023-12-13"
+                                        },
+                                        "stype": "ID",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "25908fa6-e26b-42d5-9ae0-1ef24b1b4483-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "25908fa6-e26b-42d5-9ae0-1ef24b1b4483-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "5c2974a35d2f48138f90e2a611b0930c",
+                                        "apiId": "name",
+                                        "isSystem": false,
+                                        "isList": false,
+                                        "displayName": "name",
+                                        "parent": {
+                                            "apiId": "Model20231213",
+                                            "displayName": "\ud83c\udf0c Model2023-12-13"
+                                        },
+                                        "stype": "STRING",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "5c2974a3-5d2f-4813-8f90-e2a611b0930c-form",
+                                            "renderer": "GCMS_SINGLE_LINE",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "5c2974a3-5d2f-4813-8f90-e2a611b0930c-table",
+                                            "renderer": "GCMS_SINGLE_LINE"
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        "components": [
+                            {
+                                "id": "47e7a6e64ff540c68a9690f10dfe2720",
+                                "apiId": "TestComponent",
+                                "apiIdPlural": "TestComponents",
+                                "displayName": "testComponent",
+                                "isSystem": false,
+                                "fields": [
+                                    {
+                                        "id": "f8555eba2e1f409a929500ce7ca5a0d0",
+                                        "apiId": "id",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "ID",
+                                        "parent": {
+                                            "apiId": "TestComponent",
+                                            "displayName": "testComponent"
+                                        },
+                                        "stype": "ID",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "f8555eba-2e1f-409a-9295-00ce7ca5a0d0-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "f8555eba-2e1f-409a-9295-00ce7ca5a0d0-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "c437aad2810f41d68c376cf2feef5a81",
+                                        "apiId": "content",
+                                        "isSystem": false,
+                                        "isList": false,
+                                        "displayName": "content",
+                                        "parent": {
+                                            "apiId": "TestComponent",
+                                            "displayName": "testComponent"
+                                        },
+                                        "stype": "RICHTEXT",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "c437aad2-810f-41d6-8c37-6cf2feef5a81-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "c437aad2-810f-41d6-8c37-6cf2feef5a81-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "ffc152f23de5463288db314648663cda",
+                                        "apiId": "text",
+                                        "isSystem": false,
+                                        "isList": false,
+                                        "displayName": "Text",
+                                        "parent": {
+                                            "apiId": "TestComponent",
+                                            "displayName": "testComponent"
+                                        },
+                                        "stype": "STRING",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "ffc152f2-3de5-4632-88db-314648663cda-form",
+                                            "renderer": "GCMS_SINGLE_LINE",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "ffc152f2-3de5-4632-88db-314648663cda-table",
+                                            "renderer": "GCMS_SINGLE_LINE"
+                                        }
+                                    },
+                                    {
+                                        "id": "e989308f672347a9864b7336e7c501a2",
+                                        "apiId": "primarySchoolComposition",
+                                        "isSystem": false,
+                                        "isList": false,
+                                        "displayName": "primarySchoolComposition",
+                                        "parent": {
+                                            "apiId": "TestComponent",
+                                            "displayName": "testComponent"
+                                        },
+                                        "stype": "STRING",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "e989308f-6723-47a9-864b-7336e7c501a2-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "e989308f-6723-47a9-864b-7336e7c501a2-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "1a6f2a9e3a5e400ca6866cef18848c31",
+                                        "apiId": "model20231213S",
+                                        "isSystem": false,
+                                        "isList": true,
+                                        "displayName": "Model20231213S",
+                                        "parent": {
+                                            "apiId": "TestComponent",
+                                            "displayName": "testComponent"
+                                        },
+                                        "udrtype": "RELATION"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "796dcaa9b640441892f81bdf9a92847c",
+                                "apiId": "TestComponent2",
+                                "apiIdPlural": "TestComponent2S",
+                                "displayName": "testComponent2",
+                                "isSystem": false,
+                                "fields": [
+                                    {
+                                        "id": "1e571e3df760475daec24c98959599ab",
+                                        "apiId": "id",
+                                        "isSystem": true,
+                                        "isList": false,
+                                        "displayName": "ID",
+                                        "parent": {
+                                            "apiId": "TestComponent2",
+                                            "displayName": "testComponent2"
+                                        },
+                                        "stype": "ID",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "1e571e3d-f760-475d-aec2-4c98959599ab-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "1e571e3d-f760-475d-aec2-4c98959599ab-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "32c67fcee6f647ad88dc1aa86c36dfe2",
+                                        "apiId": "location",
+                                        "isSystem": false,
+                                        "isList": false,
+                                        "displayName": "location",
+                                        "parent": {
+                                            "apiId": "TestComponent2",
+                                            "displayName": "testComponent2"
+                                        },
+                                        "stype": "LOCATION",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "32c67fce-e6f6-47ad-88dc-1aa86c36dfe2-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "32c67fce-e6f6-47ad-88dc-1aa86c36dfe2-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    },
+                                    {
+                                        "id": "f0e1c2781e444b6ca8c5d9cbad8c29dd",
+                                        "apiId": "avatar",
+                                        "isSystem": false,
+                                        "isList": false,
+                                        "displayName": "Avatar",
+                                        "parent": {
+                                            "apiId": "TestComponent2",
+                                            "displayName": "testComponent2"
+                                        },
+                                        "stype": "JSON",
+                                        "isLocalized": false,
+                                        "formConfig": {
+                                            "id": "f0e1c278-1e44-4b6c-a8c5-d9cbad8c29dd-form",
+                                            "renderer": "GCMS",
+                                            "config": {},
+                                            "extension": null,
+                                            "appElement": null
+                                        },
+                                        "tableConfig": {
+                                            "id": "f0e1c278-1e44-4b6c-a8c5-d9cbad8c29dd-table",
+                                            "renderer": "GCMS"
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        "enumerations": [
+                            {
+                                "id": "bfb88cecd9054924b83a9c0ac3256e2a",
+                                "apiId": "Annimals",
+                                "displayName": "annimals",
+                                "values": [
+                                    {
+                                        "id": "7340d34c26634f9ba92fad8c47797213",
+                                        "apiId": "Dog",
+                                        "displayName": "Dog"
+                                    },
+                                    {
+                                        "id": "e2e0a99b039a4c9e902675a779e2665d",
+                                        "apiId": "Cat",
+                                        "displayName": "Cat"
+                                    }
+                                ],
+                                "isSystem": false
+                            }
+                        ]
+                    },
+                    "contentViews": [
+                        {
+                            "id": "9e720ee44cc44d1ca9f90ee378a782f5",
+                            "type": "BUILT_IN",
+                            "model": {
+                                "apiId": "Test"
+                            },
+                            "name": "test"
+                        },
+                        {
+                            "id": "7df751c1212a4ce4a80e14fae50d323d",
+                            "type": "BUILT_IN",
+                            "model": {
+                                "apiId": "TestModels"
+                            },
+                            "name": "testModels"
+                        },
+                        {
+                            "id": "6c33d351e4a640c48c8364b94b47c5be",
+                            "type": "BUILT_IN",
+                            "model": {
+                                "apiId": "NewTest"
+                            },
+                            "name": "newTest"
+                        },
+                        {
+                            "id": "9369e1a55b924a85a67fe56136bb0bfe",
+                            "type": "BUILT_IN",
+                            "model": {
+                                "apiId": "Model20231213"
+                            },
+                            "name": "\ud83c\udf0c Model2023-12-13"
+                        }
+                    ],
+                    "appInstallations": [
+                        {
+                            "id": "c950a13ea910482e87abc5fb224258ce",
+                            "fields": [
+                                {
+                                    "id": "0e5fe7ac775c4a00974ba4f944306615",
+                                    "displayName": "Avatar"
+                                },
+                                {
+                                    "id": "7b6e86ffe6784dc2885c0ffa1cb7a5c6",
+                                    "displayName": "Avatar"
+                                }
+                            ],
+                            "app": {
+                                "apiId": "epic-asset-picker-local",
+                                "name": "epic-asset-picker(local)",
+                                "elements": [
+                                    {
+                                        "id": "c5e01ca146b443349b04e10be145e625",
+                                        "apiId": "epicAssetPickerLocal"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "dc55bd521d1b4fc19308036e76d4e50a",
+                            "fields": [
+                                {
+                                    "id": "0fd89dcb120146a7875e00dd4e3d4a79",
+                                    "displayName": "environment"
+                                }
+                            ],
+                            "app": {
+                                "apiId": "epic-tags",
+                                "name": "epic tags(local)",
+                                "elements": [
+                                    {
+                                        "id": "24b32a86967a434aad09c0089755ed60",
+                                        "apiId": "epictags"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "9499477a19cb4de1ba592f57cca2062e",
+                            "fields": [
+                                {
+                                    "id": "06d11f3e12a2437cbd29943be3c10b5c",
+                                    "displayName": "Article"
+                                }
+                            ],
+                            "app": {
+                                "apiId": "epic-ckeditor",
+                                "name": "epic-ckeditor",
+                                "elements": [
+                                    {
+                                        "id": "cf9fbddd6183490399cfbb5fd2040ef3",
+                                        "apiId": "epic-ckeditor"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "9de84258abf44a7e856d47f2053a315d",
+                            "fields": [],
+                            "app": {
+                                "apiId": "sync-component",
+                                "name": "sync-component",
+                                "elements": [
+                                    {
+                                        "id": "7df403899bbf4be181bc5f199866f1d9",
+                                        "apiId": "sync-compoent"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,200 @@
+[
+    {
+        "id": "47e7a6e64ff540c68a9690f10dfe2720",
+        "apiId": "TestComponent",
+        "apiIdPlural": "TestComponents",
+        "displayName": "testComponent",
+        "isSystem": false,
+        "fields": [
+            {
+                "id": "f8555eba2e1f409a929500ce7ca5a0d0",
+                "apiId": "id",
+                "isSystem": true,
+                "isList": false,
+                "displayName": "ID",
+                "parent": {
+                    "apiId": "TestComponent",
+                    "displayName": "testComponent"
+                },
+                "stype": "ID",
+                "isLocalized": false,
+                "formConfig": {
+                    "id": "f8555eba-2e1f-409a-9295-00ce7ca5a0d0-form",
+                    "renderer": "GCMS",
+                    "config": {},
+                    "extension": null,
+                    "appElement": null
+                },
+                "tableConfig": {
+                    "id": "f8555eba-2e1f-409a-9295-00ce7ca5a0d0-table",
+                    "renderer": "GCMS"
+                }
+            },
+            {
+                "id": "c437aad2810f41d68c376cf2feef5a81",
+                "apiId": "content",
+                "isSystem": false,
+                "isList": false,
+                "displayName": "content",
+                "parent": {
+                    "apiId": "TestComponent",
+                    "displayName": "testComponent"
+                },
+                "stype": "RICHTEXT",
+                "isLocalized": false,
+                "formConfig": {
+                    "id": "c437aad2-810f-41d6-8c37-6cf2feef5a81-form",
+                    "renderer": "GCMS",
+                    "config": {},
+                    "extension": null,
+                    "appElement": null
+                },
+                "tableConfig": {
+                    "id": "c437aad2-810f-41d6-8c37-6cf2feef5a81-table",
+                    "renderer": "GCMS"
+                }
+            },
+            {
+                "id": "ffc152f23de5463288db314648663cda",
+                "apiId": "text",
+                "isSystem": false,
+                "isList": false,
+                "displayName": "Text",
+                "parent": {
+                    "apiId": "TestComponent",
+                    "displayName": "testComponent"
+                },
+                "stype": "STRING",
+                "isLocalized": false,
+                "formConfig": {
+                    "id": "ffc152f2-3de5-4632-88db-314648663cda-form",
+                    "renderer": "GCMS_SINGLE_LINE",
+                    "config": {},
+                    "extension": null,
+                    "appElement": null
+                },
+                "tableConfig": {
+                    "id": "ffc152f2-3de5-4632-88db-314648663cda-table",
+                    "renderer": "GCMS_SINGLE_LINE"
+                }
+            },
+            {
+                "id": "e989308f672347a9864b7336e7c501a2",
+                "apiId": "primarySchoolComposition",
+                "isSystem": false,
+                "isList": false,
+                "displayName": "primarySchoolComposition",
+                "parent": {
+                    "apiId": "TestComponent",
+                    "displayName": "testComponent"
+                },
+                "stype": "STRING",
+                "isLocalized": false,
+                "formConfig": {
+                    "id": "e989308f-6723-47a9-864b-7336e7c501a2-form",
+                    "renderer": "GCMS",
+                    "config": {},
+                    "extension": null,
+                    "appElement": null
+                },
+                "tableConfig": {
+                    "id": "e989308f-6723-47a9-864b-7336e7c501a2-table",
+                    "renderer": "GCMS"
+                }
+            },
+            {
+                "id": "1a6f2a9e3a5e400ca6866cef18848c31",
+                "apiId": "model20231213S",
+                "isSystem": false,
+                "isList": true,
+                "displayName": "Model20231213S",
+                "parent": {
+                    "apiId": "TestComponent",
+                    "displayName": "testComponent"
+                },
+                "udrtype": "RELATION"
+            }
+        ]
+    },
+    {
+        "id": "796dcaa9b640441892f81bdf9a92847c",
+        "apiId": "TestComponent2",
+        "apiIdPlural": "TestComponent2S",
+        "displayName": "testComponent2",
+        "isSystem": false,
+        "fields": [
+            {
+                "id": "1e571e3df760475daec24c98959599ab",
+                "apiId": "id",
+                "isSystem": true,
+                "isList": false,
+                "displayName": "ID",
+                "parent": {
+                    "apiId": "TestComponent2",
+                    "displayName": "testComponent2"
+                },
+                "stype": "ID",
+                "isLocalized": false,
+                "formConfig": {
+                    "id": "1e571e3d-f760-475d-aec2-4c98959599ab-form",
+                    "renderer": "GCMS",
+                    "config": {},
+                    "extension": null,
+                    "appElement": null
+                },
+                "tableConfig": {
+                    "id": "1e571e3d-f760-475d-aec2-4c98959599ab-table",
+                    "renderer": "GCMS"
+                }
+            },
+            {
+                "id": "32c67fcee6f647ad88dc1aa86c36dfe2",
+                "apiId": "location",
+                "isSystem": false,
+                "isList": false,
+                "displayName": "location",
+                "parent": {
+                    "apiId": "TestComponent2",
+                    "displayName": "testComponent2"
+                },
+                "stype": "LOCATION",
+                "isLocalized": false,
+                "formConfig": {
+                    "id": "32c67fce-e6f6-47ad-88dc-1aa86c36dfe2-form",
+                    "renderer": "GCMS",
+                    "config": {},
+                    "extension": null,
+                    "appElement": null
+                },
+                "tableConfig": {
+                    "id": "32c67fce-e6f6-47ad-88dc-1aa86c36dfe2-table",
+                    "renderer": "GCMS"
+                }
+            },
+            {
+                "id": "f0e1c2781e444b6ca8c5d9cbad8c29dd",
+                "apiId": "avatar",
+                "isSystem": false,
+                "isList": false,
+                "displayName": "Avatar",
+                "parent": {
+                    "apiId": "TestComponent2",
+                    "displayName": "testComponent2"
+                },
+                "stype": "JSON",
+                "isLocalized": false,
+                "formConfig": {
+                    "id": "f0e1c278-1e44-4b6c-a8c5-d9cbad8c29dd-form",
+                    "renderer": "GCMS",
+                    "config": {},
+                    "extension": null,
+                    "appElement": null
+                },
+                "tableConfig": {
+                    "id": "f0e1c278-1e44-4b6c-a8c5-d9cbad8c29dd-table",
+                    "renderer": "GCMS"
+                }
+            }
+        ]
+    }
+]
