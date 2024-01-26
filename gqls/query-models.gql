@@ -13,11 +13,11 @@ query QueryModels($projectId: ID!, $environment: String!) {
             apiIdPlural
             displayName
             isSystem
-            fields(includeApiOnlyFields: true, includeHiddenFields: false) {
+            fields(includeApiOnlyFields: false, includeHiddenFields: false) {
               ...fields
             }
           }
-          components(includeSystemComponents: true) {
+          components(includeSystemComponents: false) {
             id
             apiId
             apiIdPlural
