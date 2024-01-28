@@ -118,6 +118,9 @@ fragment fields on IField {
   ... on EnumerableField {
     apiId
     etype: type
+    enumeration {
+      apiId
+    }
   }
   ... on SimpleField {
     apiId

@@ -50,6 +50,9 @@ fields = '''
         ... on EnumerableField {
             apiId
             etype: type
+            enumeration {
+                apiId
+            }
         }
         ... on SimpleField {
             apiId
@@ -85,7 +88,7 @@ fields = '''
     }
 '''
 
-query_models_and_components = '''
+query_models_and_components_sql = '''
     query QueryModels($projectId: ID!, $environment: String!) {
         viewer {
             id
@@ -113,6 +116,17 @@ query_models_and_components = '''
                                 ...fields
                             }
                         }
+                        enumerations {
+                            id
+                            apiId
+                            displayName
+                            values {
+                                id
+                                apiId
+                                displayName
+                            }
+                            isSystem
+                        }
                     }
                 }
             }
@@ -121,7 +135,7 @@ query_models_and_components = '''
 ''' + fields
 
 # Do not know, why not work
-query_model_fields = '''
+query_model_fields_sql = '''
     query QueryModelfields($projectId: ID!, $environment: String!, $appId: String!) {
         viewer {
             project(id: $projectId) {
@@ -134,6 +148,49 @@ query_model_fields = '''
                         }
                     }
                 }
+            }
+        }
+    }
+'''
+
+get_model_by_api_id_sql = '''
+    query QueryModel($projectId: ID!, $environment: String!, $apiId: String!) {
+        viewer {
+            project(id: $projectId) {
+            environment(name: $environment) {
+                contentModel {
+                    model(apiId: $apiId) {
+                        id
+                        apiId
+                        apiIdPlural
+                        createdAt
+                        description
+                        displayName
+                        isSystem
+                        isLocalized
+                        fields(includeApiOnlyFields: false, includeHiddenFields: false) {
+                            ...fields
+                        }
+                    }
+                }
+            }
+            }
+        }
+    }
+''' + fields
+
+get_enumerations_sql = '''
+    query QueryEnumerations($projectId: ID!, $environment: String!) {
+        viewer {
+            project(id: $projectId) {
+            environment(name: $environment) {
+                contentModel {
+                    enumerations {
+                        id
+                        apiId
+                    }
+                }
+            }
             }
         }
     }
