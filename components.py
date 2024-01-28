@@ -129,7 +129,7 @@ class ProjectPage(customtkinter.CTkFrame):
         self.target_project_form.set(default_json['TARGET_PROJECT'])
 
     def submit(self) -> None:
-        self.submit_command(info={
+        self.submit_command(project_info={
             'share': self.share_project_form.get(),
             'target': self.target_project_form.get()
         })

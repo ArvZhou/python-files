@@ -3,8 +3,14 @@ __author__ = 'arvin.zhou'
 
 from typing import Callable
 import customtkinter
+import logging
 from components import ProjectPage
-from sync import start_sync
+from sync import SyncSchema
+
+
+LOG_FORMAT = "%(asctime)s - %(levelname)s - %(message)s"
+DATE_FORMAT = "%m/%d/%Y %H:%M:%S %p"
+logging.basicConfig(filename='_log/sync.log', level=logging.DEBUG, format=LOG_FORMAT, datefmt=DATE_FORMAT)
 
 class App():
     def __init__(self, setup_content: Callable = None):
@@ -20,7 +26,7 @@ class App():
         self.app.mainloop()
 
 def setup_content(app):
-    page = ProjectPage(master=app, submit_command=start_sync)
+    page = ProjectPage(master=app, submit_command=SyncSchema)
     page.grid(row=0, column=0, columnspan=1, padx=3, pady=3, sticky="new")
 
 App(setup_content).run()

@@ -2,13 +2,7 @@ import requests
 import logging
 from gqls.querys  import query_models_and_components_sql, query_model_fields_sql, get_model_by_api_id_sql, get_enumerations_sql
 from gqls.mutations import create_model_gql, create_simple_field_gql, create_enumeration_gql, create_enumeration_field_gql
-
-def get_match_item(items, apiId):
-    for item in items:
-        if item['apiId'] == apiId:
-            return item
-        
-    return None
+from utils import get_match_item
 
 def get_models_and_components(projectId, environment, token, managementUrl):
     payload = {
@@ -104,7 +98,11 @@ def get_model_by_api_id(
         'variables': variables
     }
     headers = {"Authorization": f"Bearer {token}"}
-    return requests.post(management_url, json=payload, headers=headers).json()
+    r = requests.post(management_url, json=payload, headers=headers).json()
+
+    print(r)
+
+    return r.get('data').get('viewer').get('project').get('environment').get('contentModel').get('model')
 
 def create_enumeration(
     token,
@@ -149,8 +147,5 @@ def get_enumeration_by_api_id(
         logging.error('Get enumerations failed!' + r)
 
     enumerations = r.get('data').get('viewer').get('project').get('environment').get('contentModel').get('enumerations')
-    print(enumerations)
-    print(apiId)
-    print(get_match_item(enumerations, apiId))
 
     return get_match_item(enumerations, apiId)

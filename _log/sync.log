@@ -1,0 +1,110 @@
+01/28/2024 21:37:30 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 21:37:34 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 24878
+01/28/2024 21:37:35 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 21:37:36 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 90
+01/28/2024 21:37:36 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 21:37:38 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 24878
+01/28/2024 21:38:54 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 21:39:00 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 24878
+01/28/2024 21:39:00 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 21:39:02 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 90
+01/28/2024 21:39:02 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 21:39:04 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 24878
+01/28/2024 21:39:04 PM - INFO - This field already exists!Avatar
+01/28/2024 21:39:04 PM - INFO - This field already exists!testAssetPicker
+01/28/2024 21:39:04 PM - INFO - This field already exists!environment
+01/28/2024 21:39:04 PM - INFO - This field already exists!startDate
+01/28/2024 21:39:04 PM - INFO - This field already exists!Animal
+01/28/2024 21:39:04 PM - INFO - This field already exists!note
+01/28/2024 21:42:13 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 21:42:17 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 24878
+01/28/2024 21:42:17 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 21:42:18 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 90
+01/28/2024 21:42:18 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 21:42:21 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 244
+01/28/2024 21:42:21 PM - INFO - Start to create model!newTest
+01/28/2024 21:42:21 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 21:42:23 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 224
+01/28/2024 21:45:06 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 21:46:31 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 21:46:35 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 24878
+01/28/2024 21:46:36 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 21:46:38 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 90
+01/28/2024 21:46:38 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 21:46:42 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 2910
+01/28/2024 21:46:42 PM - INFO - Start to create SimpleField!Avatar
+01/28/2024 21:46:42 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 21:46:44 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 230
+01/28/2024 21:46:47 PM - INFO - Create simple field successfully!Avatar
+01/28/2024 21:46:47 PM - INFO - This is RelationalField!
+01/28/2024 21:46:47 PM - INFO - Start to create SimpleField!environment
+01/28/2024 21:46:47 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 21:46:49 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 230
+01/28/2024 21:46:52 PM - INFO - Create simple field successfully!environment
+01/28/2024 21:46:52 PM - INFO - Start to create SimpleField!startDate
+01/28/2024 21:46:52 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 21:46:54 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 230
+01/28/2024 21:46:57 PM - INFO - Create simple field successfully!startDate
+01/28/2024 21:46:57 PM - INFO - Start to create EnumerationField!Animal
+01/28/2024 21:46:57 PM - INFO - Start to create Enumeration!Annimals
+01/28/2024 21:46:57 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 21:46:59 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 230
+01/28/2024 21:46:59 PM - INFO - Create Enumeration successfully!
+01/28/2024 21:47:04 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 21:47:07 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 145
+01/28/2024 21:47:07 PM - INFO - Start to create EnumerableField!Animal
+01/28/2024 21:47:07 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 21:47:08 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 234
+01/28/2024 21:47:13 PM - INFO - Create enumerable field successfully!Animal
+01/28/2024 21:47:13 PM - INFO - Start to create SimpleField!note
+01/28/2024 21:47:13 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 21:47:15 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 230
+01/28/2024 21:47:18 PM - INFO - Create simple field successfully!note
+01/28/2024 22:05:10 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 22:05:14 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 24878
+01/28/2024 22:05:16 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 22:05:20 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 90
+01/28/2024 22:05:20 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 22:05:25 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 244
+01/28/2024 22:05:25 PM - INFO - Start to create model!newTest
+01/28/2024 22:05:25 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 22:05:29 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 224
+01/28/2024 22:09:34 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 22:09:36 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 24878
+01/28/2024 22:09:37 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 22:09:41 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 90
+01/28/2024 22:09:41 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 22:09:42 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 244
+01/28/2024 22:09:42 PM - INFO - Start to create model!newTest
+01/28/2024 22:09:42 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 22:09:44 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 224
+01/28/2024 22:09:49 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 22:09:52 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 2837
+01/28/2024 22:09:52 PM - INFO - Start to create SimpleField!Avatar
+01/28/2024 22:09:52 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 22:09:53 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 230
+01/28/2024 22:09:56 PM - INFO - Create simple field successfully!Avatar
+01/28/2024 22:09:56 PM - INFO - This is RelationalField!
+01/28/2024 22:09:56 PM - INFO - Start to create SimpleField!environment
+01/28/2024 22:09:56 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 22:09:59 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 230
+01/28/2024 22:10:02 PM - INFO - Create simple field successfully!environment
+01/28/2024 22:10:02 PM - INFO - Start to create SimpleField!startDate
+01/28/2024 22:10:02 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 22:10:04 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 230
+01/28/2024 22:10:07 PM - INFO - Create simple field successfully!startDate
+01/28/2024 22:10:07 PM - INFO - Start to create EnumerationField!Animal
+01/28/2024 22:10:07 PM - INFO - Start to create Enumeration!Annimals
+01/28/2024 22:10:07 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 22:10:08 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 230
+01/28/2024 22:10:08 PM - INFO - Create Enumeration successfully!
+01/28/2024 22:10:13 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 22:10:15 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 145
+01/28/2024 22:10:15 PM - INFO - Start to create EnumerableField!Animal
+01/28/2024 22:10:15 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 22:10:16 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 234
+01/28/2024 22:10:21 PM - INFO - Create enumerable field successfully!Animal
+01/28/2024 22:10:21 PM - INFO - Start to create SimpleField!note
+01/28/2024 22:10:21 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/28/2024 22:10:23 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 230
+01/28/2024 22:10:26 PM - INFO - Create simple field successfully!note

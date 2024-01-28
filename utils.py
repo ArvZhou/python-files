@@ -23,3 +23,10 @@ def get_json(json_path):
             return json.loads(content)
     else:
         raise Exception(f'json file not found: {json_path}')
+
+def get_match_item(items, apiId):
+    for item in items:
+        if item['apiId'] == apiId:
+            return item
+        
+    return None
