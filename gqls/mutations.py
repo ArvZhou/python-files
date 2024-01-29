@@ -114,4 +114,22 @@ create_component_union_field_gql = '''
                 status
             }
         }
-    }'''
+    }
+'''
+
+create_relational_field_gql = '''
+    mutation CreateRelationalField($data: CreateRelationalFieldInput!) {
+        createRelationalField(data: $data) {
+            migration {
+                createdAt
+                errors
+                finishedAt
+                id
+                name
+                operationType
+                resourceId
+                status
+            }
+        }
+    }
+'''

@@ -975,3 +975,71 @@
 01/29/2024 14:31:02 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 238
 01/29/2024 14:31:07 PM - INFO - Create ComponentUnionField successfully!test multiple componets
 01/29/2024 14:31:07 PM - INFO - This is ComponentUnionField!
+01/29/2024 14:58:39 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 14:58:41 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 26501
+01/29/2024 14:58:41 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 14:58:42 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 90
+01/29/2024 14:58:42 PM - INFO - Get target models and components
+01/29/2024 14:58:42 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 14:58:44 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 8909
+01/29/2024 14:58:44 PM - INFO - Get target models and components successfully
+01/29/2024 14:58:44 PM - INFO - Get target models and components
+01/29/2024 14:58:44 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 14:58:45 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 8909
+01/29/2024 14:58:45 PM - INFO - Get target models and components successfully
+01/29/2024 14:58:45 PM - INFO - This field already exists!Avatar
+01/29/2024 14:58:45 PM - INFO - Start to create ComponentUnionField!testAssetPicker
+01/29/2024 14:58:45 PM - INFO - This field already exists!environment
+01/29/2024 14:58:45 PM - INFO - This field already exists!startDate
+01/29/2024 14:58:45 PM - INFO - This field already exists!Animal
+01/29/2024 14:58:45 PM - INFO - This field already exists!note
+01/29/2024 14:58:45 PM - INFO - This field already exists!test compoennt
+01/29/2024 14:58:45 PM - INFO - This field already exists!test multiple componets
+01/29/2024 14:58:45 PM - INFO - This is UniDirectionalRelationalField!
+01/29/2024 14:58:45 PM - INFO - This is UnionField!
+01/29/2024 15:05:22 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 15:05:24 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 26501
+01/29/2024 15:05:24 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 15:05:25 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 90
+01/29/2024 15:05:25 PM - INFO - Get target models and components
+01/29/2024 15:05:25 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 15:05:27 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 8909
+01/29/2024 15:05:27 PM - INFO - Get target models and components successfully
+01/29/2024 15:05:27 PM - INFO - Get target models and components
+01/29/2024 15:05:27 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 15:05:28 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 8909
+01/29/2024 15:05:28 PM - INFO - Get target models and components successfully
+01/29/2024 15:05:28 PM - INFO - This field already exists!Avatar
+01/29/2024 15:05:28 PM - INFO - Start to create ComponentUnionField!testAssetPicker
+01/29/2024 15:05:28 PM - INFO - This field already exists!environment
+01/29/2024 15:05:28 PM - INFO - This field already exists!startDate
+01/29/2024 15:05:28 PM - INFO - This field already exists!Animal
+01/29/2024 15:05:28 PM - INFO - This field already exists!note
+01/29/2024 15:05:28 PM - INFO - This field already exists!test compoennt
+01/29/2024 15:05:28 PM - INFO - This field already exists!test multiple componets
+01/29/2024 15:05:28 PM - INFO - Start to create ComponentUnionField!TestModels
+01/29/2024 15:05:28 PM - INFO - Start to create ComponentUnionField!test mitiple models
+01/29/2024 15:31:37 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 15:31:39 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 26501
+01/29/2024 15:31:39 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 15:31:41 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 90
+01/29/2024 15:31:41 PM - INFO - Get target models and components
+01/29/2024 15:31:41 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 15:31:42 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 8909
+01/29/2024 15:31:42 PM - INFO - Get target models and components successfully
+01/29/2024 15:31:42 PM - INFO - Get target models and components
+01/29/2024 15:31:42 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 15:31:43 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 8909
+01/29/2024 15:31:43 PM - INFO - Get target models and components successfully
+01/29/2024 15:31:43 PM - INFO - This field already exists!Avatar
+01/29/2024 15:31:43 PM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 15:31:45 PM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 234
+01/29/2024 15:31:48 PM - INFO - Create relational simple field successfully!testAssetPicker
+01/29/2024 15:31:48 PM - INFO - This field already exists!environment
+01/29/2024 15:31:48 PM - INFO - This field already exists!startDate
+01/29/2024 15:31:48 PM - INFO - This field already exists!Animal
+01/29/2024 15:31:48 PM - INFO - This field already exists!note
+01/29/2024 15:31:48 PM - INFO - This field already exists!test compoennt
+01/29/2024 15:31:48 PM - INFO - This field already exists!test multiple componets
+01/29/2024 15:31:48 PM - INFO - Start to create ComponentUnionField!TestModels
+01/29/2024 15:31:48 PM - INFO - Start to create ComponentUnionField!test mitiple models
