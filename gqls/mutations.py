@@ -82,3 +82,20 @@ create_enumeration_field_gql = '''
         }
     }
 '''
+
+create_component_field_gql = '''
+    mutation CreateComponentField($data: CreateComponentFieldInput!) {
+        createComponentField(data: $data) {
+            migration {
+                createdAt
+                errors
+                finishedAt
+                id
+                name
+                operationType
+                resourceId
+                status
+            }
+        }
+    }
+'''

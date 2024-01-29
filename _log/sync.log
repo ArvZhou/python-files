@@ -406,3 +406,317 @@
 01/29/2024 10:06:49 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
 01/29/2024 10:06:50 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 230
 01/29/2024 10:06:53 AM - INFO - Create simple field successfully!Avatar
+01/29/2024 10:26:49 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 10:26:50 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 25118
+01/29/2024 10:26:50 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 10:26:52 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 90
+01/29/2024 10:26:52 AM - INFO - Get target models and components
+01/29/2024 10:26:52 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 10:26:53 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 8375
+01/29/2024 10:26:53 AM - INFO - Get target models and components successfully
+01/29/2024 10:26:53 AM - INFO - Get target models and components
+01/29/2024 10:26:53 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 10:26:54 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 8375
+01/29/2024 10:26:54 AM - INFO - Get target models and components successfully
+01/29/2024 10:26:54 AM - INFO - This field already exists!Avatar
+01/29/2024 10:26:54 AM - INFO - This is RelationalField!
+01/29/2024 10:26:54 AM - INFO - This field already exists!environment
+01/29/2024 10:26:54 AM - INFO - This field already exists!startDate
+01/29/2024 10:26:54 AM - INFO - This field already exists!Animal
+01/29/2024 10:26:54 AM - INFO - This field already exists!note
+01/29/2024 10:26:54 AM - INFO - Start to create ComponentField!test compoennt
+01/29/2024 10:26:54 AM - INFO - This is ComponentField!
+01/29/2024 10:51:18 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 10:51:20 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 25118
+01/29/2024 10:51:20 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 10:51:21 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 90
+01/29/2024 10:51:21 AM - INFO - Get target models and components
+01/29/2024 10:51:21 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 10:51:22 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 8375
+01/29/2024 10:51:22 AM - INFO - Get target models and components successfully
+01/29/2024 10:51:22 AM - INFO - Get target models and components
+01/29/2024 10:51:22 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 10:51:24 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 8375
+01/29/2024 10:51:24 AM - INFO - Get target models and components successfully
+01/29/2024 10:51:24 AM - INFO - This field already exists!Avatar
+01/29/2024 10:51:24 AM - INFO - This is RelationalField!
+01/29/2024 10:51:24 AM - INFO - This field already exists!environment
+01/29/2024 10:51:24 AM - INFO - This field already exists!startDate
+01/29/2024 10:51:24 AM - INFO - This field already exists!Animal
+01/29/2024 10:51:24 AM - INFO - This field already exists!note
+01/29/2024 10:51:24 AM - INFO - Start to create ComponentField!test compoennt
+01/29/2024 10:51:24 AM - INFO - Get target models and components
+01/29/2024 10:51:24 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 10:51:25 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 8375
+01/29/2024 10:51:25 AM - INFO - Get target models and components successfully
+01/29/2024 10:51:25 AM - INFO - This field already exists!content
+01/29/2024 10:51:25 AM - INFO - This field already exists!Text
+01/29/2024 10:51:25 AM - INFO - This field already exists!primarySchoolComposition
+01/29/2024 10:51:25 AM - INFO - This is UniDirectionalRelationalField!
+01/29/2024 10:51:25 AM - INFO - Start to create ComponentField!test compoennt
+01/29/2024 10:51:25 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 10:51:26 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 400 748
+01/29/2024 10:56:00 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 10:56:01 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 25118
+01/29/2024 10:56:01 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 10:56:02 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 90
+01/29/2024 10:56:02 AM - INFO - Get target models and components
+01/29/2024 10:56:02 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 10:56:03 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 8375
+01/29/2024 10:56:03 AM - INFO - Get target models and components successfully
+01/29/2024 10:56:03 AM - INFO - Get target models and components
+01/29/2024 10:56:03 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 10:56:05 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 8375
+01/29/2024 10:56:05 AM - INFO - Get target models and components successfully
+01/29/2024 10:56:05 AM - INFO - This field already exists!Avatar
+01/29/2024 10:56:05 AM - INFO - This is RelationalField!
+01/29/2024 10:56:05 AM - INFO - This field already exists!environment
+01/29/2024 10:56:05 AM - INFO - This field already exists!startDate
+01/29/2024 10:56:05 AM - INFO - This field already exists!Animal
+01/29/2024 10:56:05 AM - INFO - This field already exists!note
+01/29/2024 10:56:05 AM - INFO - Start to create ComponentField!test compoennt
+01/29/2024 10:56:05 AM - INFO - Get target models and components
+01/29/2024 10:56:05 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 10:56:06 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 8375
+01/29/2024 10:56:06 AM - INFO - Get target models and components successfully
+01/29/2024 10:56:06 AM - INFO - This field already exists!content
+01/29/2024 10:56:06 AM - INFO - This field already exists!Text
+01/29/2024 10:56:06 AM - INFO - This field already exists!primarySchoolComposition
+01/29/2024 10:56:06 AM - INFO - This is UniDirectionalRelationalField!
+01/29/2024 10:56:06 AM - INFO - Start to create ComponentField!test compoennt
+01/29/2024 10:56:06 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 10:56:07 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 400 748
+01/29/2024 10:58:32 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 10:58:33 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 25118
+01/29/2024 10:58:33 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 10:58:34 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 90
+01/29/2024 10:58:34 AM - INFO - Get target models and components
+01/29/2024 10:58:34 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 10:58:35 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 8375
+01/29/2024 10:58:35 AM - INFO - Get target models and components successfully
+01/29/2024 10:58:35 AM - INFO - Get target models and components
+01/29/2024 10:58:35 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 10:58:37 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 8375
+01/29/2024 10:58:37 AM - INFO - Get target models and components successfully
+01/29/2024 10:58:37 AM - INFO - This field already exists!Avatar
+01/29/2024 10:58:37 AM - INFO - This is RelationalField!
+01/29/2024 10:58:37 AM - INFO - This field already exists!environment
+01/29/2024 10:58:37 AM - INFO - This field already exists!startDate
+01/29/2024 10:58:37 AM - INFO - This field already exists!Animal
+01/29/2024 10:58:37 AM - INFO - This field already exists!note
+01/29/2024 10:58:37 AM - INFO - Start to create ComponentField!test compoennt
+01/29/2024 10:58:37 AM - INFO - Get target models and components
+01/29/2024 10:58:37 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 10:58:38 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 8375
+01/29/2024 10:58:38 AM - INFO - Get target models and components successfully
+01/29/2024 10:58:38 AM - INFO - This field already exists!content
+01/29/2024 10:58:38 AM - INFO - This field already exists!Text
+01/29/2024 10:58:38 AM - INFO - This field already exists!primarySchoolComposition
+01/29/2024 10:58:38 AM - INFO - This is UniDirectionalRelationalField!
+01/29/2024 10:58:38 AM - INFO - Start to create ComponentField!test compoennt
+01/29/2024 10:58:38 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 10:58:39 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 400 748
+01/29/2024 10:58:39 AM - ERROR - Create component filed error 
+[{'message': 'Something went wrong (RequestID: clrycbp630ee301u15gke7py4). Please contact us in Slack (https://slack.hygraph.com) or via email (support@hygraph.com).', 'extensions': {'code': 'BAD_USER_INPUT', 'requestID': 'clrycbp630ee301u15gke7py4'}}, {'message': 'Something went wrong (RequestID: clrycbp630ee301u15gke7py4). Please contact us in Slack (https://slack.hygraph.com) or via email (support@hygraph.com).', 'extensions': {'code': 'BAD_USER_INPUT', 'requestID': 'clrycbp630ee301u15gke7py4'}}, {'message': 'Something went wrong (RequestID: clrycbp630ee301u15gke7py4). Please contact us in Slack (https://slack.hygraph.com) or via email (support@hygraph.com).', 'extensions': {'code': 'BAD_USER_INPUT', 'requestID': 'clrycbp630ee301u15gke7py4'}}]
+01/29/2024 10:58:44 AM - INFO - This is ComponentField!
+01/29/2024 10:59:59 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:00:01 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 25118
+01/29/2024 11:00:01 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:00:02 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 90
+01/29/2024 11:00:02 AM - INFO - Get target models and components
+01/29/2024 11:00:02 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:00:03 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 8375
+01/29/2024 11:00:03 AM - INFO - Get target models and components successfully
+01/29/2024 11:00:03 AM - INFO - Get target models and components
+01/29/2024 11:00:03 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:00:04 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 8375
+01/29/2024 11:00:04 AM - INFO - Get target models and components successfully
+01/29/2024 11:00:04 AM - INFO - This field already exists!Avatar
+01/29/2024 11:00:04 AM - INFO - This is RelationalField!
+01/29/2024 11:00:04 AM - INFO - This field already exists!environment
+01/29/2024 11:00:04 AM - INFO - This field already exists!startDate
+01/29/2024 11:00:04 AM - INFO - This field already exists!Animal
+01/29/2024 11:00:04 AM - INFO - This field already exists!note
+01/29/2024 11:00:04 AM - INFO - Start to create ComponentField!test compoennt
+01/29/2024 11:00:04 AM - INFO - Get target models and components
+01/29/2024 11:00:04 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:00:05 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 8375
+01/29/2024 11:00:05 AM - INFO - Get target models and components successfully
+01/29/2024 11:00:05 AM - INFO - This field already exists!content
+01/29/2024 11:00:05 AM - INFO - This field already exists!Text
+01/29/2024 11:00:05 AM - INFO - This field already exists!primarySchoolComposition
+01/29/2024 11:00:05 AM - INFO - This is UniDirectionalRelationalField!
+01/29/2024 11:00:05 AM - INFO - Start to create ComponentField!test compoennt
+01/29/2024 11:00:05 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:00:07 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 400 748
+01/29/2024 11:00:07 AM - ERROR - Create component filed error 
+[{'message': 'Something went wrong (RequestID: clrycdkfl0ee901u16ung3boo). Please contact us in Slack (https://slack.hygraph.com) or via email (support@hygraph.com).', 'extensions': {'code': 'BAD_USER_INPUT', 'requestID': 'clrycdkfl0ee901u16ung3boo'}}, {'message': 'Something went wrong (RequestID: clrycdkfl0ee901u16ung3boo). Please contact us in Slack (https://slack.hygraph.com) or via email (support@hygraph.com).', 'extensions': {'code': 'BAD_USER_INPUT', 'requestID': 'clrycdkfl0ee901u16ung3boo'}}, {'message': 'Something went wrong (RequestID: clrycdkfl0ee901u16ung3boo). Please contact us in Slack (https://slack.hygraph.com) or via email (support@hygraph.com).', 'extensions': {'code': 'BAD_USER_INPUT', 'requestID': 'clrycdkfl0ee901u16ung3boo'}}]
+{'data': {'parentId': '419a64b445554b66949b02451d480faa', 'apiId': 'testCompoennt', 'component': 'TestComponent', 'displayName': 'test compoennt', 'description': ''}}
+01/29/2024 11:00:12 AM - INFO - This is ComponentField!
+01/29/2024 11:15:14 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:15:16 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 25118
+01/29/2024 11:15:16 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:15:17 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 90
+01/29/2024 11:15:17 AM - INFO - Get target models and components
+01/29/2024 11:15:17 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:15:18 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 8375
+01/29/2024 11:15:18 AM - INFO - Get target models and components successfully
+01/29/2024 11:15:18 AM - INFO - Get target models and components
+01/29/2024 11:15:18 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:15:19 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 8375
+01/29/2024 11:15:19 AM - INFO - Get target models and components successfully
+01/29/2024 11:15:19 AM - INFO - This field already exists!Avatar
+01/29/2024 11:15:19 AM - INFO - This is RelationalField!
+01/29/2024 11:15:19 AM - INFO - This field already exists!environment
+01/29/2024 11:15:19 AM - INFO - This field already exists!startDate
+01/29/2024 11:15:19 AM - INFO - This field already exists!Animal
+01/29/2024 11:15:19 AM - INFO - This field already exists!note
+01/29/2024 11:15:19 AM - INFO - Start to create ComponentField!test compoennt
+01/29/2024 11:15:19 AM - INFO - Get target models and components
+01/29/2024 11:15:19 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:15:21 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 8375
+01/29/2024 11:15:21 AM - INFO - Get target models and components successfully
+01/29/2024 11:15:21 AM - INFO - This field already exists!content
+01/29/2024 11:15:21 AM - INFO - This field already exists!Text
+01/29/2024 11:15:21 AM - INFO - This field already exists!primarySchoolComposition
+01/29/2024 11:15:21 AM - INFO - This is UniDirectionalRelationalField!
+01/29/2024 11:15:21 AM - INFO - Start to create ComponentField!test compoennt
+01/29/2024 11:15:21 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:15:22 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 400 258
+01/29/2024 11:15:22 AM - ERROR - Create component filed error 
+[{'message': 'Something went wrong (RequestID: clrycx6ms0eg101u1es7b1zjr). Please contact us in Slack (https://slack.hygraph.com) or via email (support@hygraph.com).', 'extensions': {'code': 'BAD_USER_INPUT', 'requestID': 'clrycx6ms0eg101u1es7b1zjr'}}]
+{'data': {'parentId': '419a64b445554b66949b02451d480faa', 'apiId': 'testCompoennt', 'component': 'TestComponent', 'displayName': 'test compoennt', 'description': '', 'isRequired': False, 'isList': False}}
+01/29/2024 11:15:27 AM - INFO - This is ComponentField!
+01/29/2024 11:23:48 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:23:50 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 25118
+01/29/2024 11:23:50 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:23:51 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 90
+01/29/2024 11:23:51 AM - INFO - Get target models and components
+01/29/2024 11:23:51 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:23:52 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 8375
+01/29/2024 11:23:52 AM - INFO - Get target models and components successfully
+01/29/2024 11:23:52 AM - INFO - Get target models and components
+01/29/2024 11:23:52 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:23:54 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 8375
+01/29/2024 11:23:54 AM - INFO - Get target models and components successfully
+01/29/2024 11:23:54 AM - INFO - This field already exists!Avatar
+01/29/2024 11:23:54 AM - INFO - This is RelationalField!
+01/29/2024 11:23:54 AM - INFO - This field already exists!environment
+01/29/2024 11:23:54 AM - INFO - This field already exists!startDate
+01/29/2024 11:23:54 AM - INFO - This field already exists!Animal
+01/29/2024 11:23:54 AM - INFO - This field already exists!note
+01/29/2024 11:23:54 AM - INFO - Start to create ComponentField!test compoennt
+01/29/2024 11:23:54 AM - INFO - Get target models and components
+01/29/2024 11:23:54 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:23:55 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 8375
+01/29/2024 11:23:55 AM - INFO - Get target models and components successfully
+01/29/2024 11:23:55 AM - INFO - This field already exists!content
+01/29/2024 11:23:55 AM - INFO - This field already exists!Text
+01/29/2024 11:23:55 AM - INFO - This field already exists!primarySchoolComposition
+01/29/2024 11:23:55 AM - INFO - This is UniDirectionalRelationalField!
+01/29/2024 11:23:55 AM - INFO - Start to create ComponentField!test compoennt
+01/29/2024 11:23:55 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:23:56 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 400 258
+01/29/2024 11:23:56 AM - ERROR - Create component filed error 
+[{'message': 'Something went wrong (RequestID: clryd87c70eil01u13qag9ckp). Please contact us in Slack (https://slack.hygraph.com) or via email (support@hygraph.com).', 'extensions': {'code': 'BAD_USER_INPUT', 'requestID': 'clryd87c70eil01u13qag9ckp'}}]
+{'data': {'parentId': '419a64b445554b66949b02451d480faa', 'apiId': 'testCompoennt', 'component': 'TestComponent', 'displayName': 'test compoennt', 'description': '', 'visibility': 'READ_WRITE', 'isRequired': False, 'isList': False}}
+01/29/2024 11:24:01 AM - INFO - This is ComponentField!
+01/29/2024 11:28:25 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:28:27 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 25118
+01/29/2024 11:28:27 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:28:28 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 90
+01/29/2024 11:28:28 AM - INFO - Get target models and components
+01/29/2024 11:28:28 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:28:29 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 8375
+01/29/2024 11:28:29 AM - INFO - Get target models and components successfully
+01/29/2024 11:28:29 AM - INFO - Get target models and components
+01/29/2024 11:28:29 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:28:30 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 8375
+01/29/2024 11:28:30 AM - INFO - Get target models and components successfully
+01/29/2024 11:28:30 AM - INFO - This field already exists!Avatar
+01/29/2024 11:28:30 AM - INFO - This is RelationalField!
+01/29/2024 11:28:30 AM - INFO - This field already exists!environment
+01/29/2024 11:28:30 AM - INFO - This field already exists!startDate
+01/29/2024 11:28:30 AM - INFO - This field already exists!Animal
+01/29/2024 11:28:30 AM - INFO - This field already exists!note
+01/29/2024 11:28:30 AM - INFO - Start to create ComponentField!test compoennt
+01/29/2024 11:28:30 AM - INFO - Get target models and components
+01/29/2024 11:28:30 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:28:32 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 8375
+01/29/2024 11:28:32 AM - INFO - Get target models and components successfully
+01/29/2024 11:28:32 AM - INFO - This field already exists!content
+01/29/2024 11:28:32 AM - INFO - This field already exists!Text
+01/29/2024 11:28:32 AM - INFO - This field already exists!primarySchoolComposition
+01/29/2024 11:28:32 AM - INFO - This is UniDirectionalRelationalField!
+01/29/2024 11:28:32 AM - INFO - Start to create ComponentField!test compoennt
+01/29/2024 11:28:32 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:28:33 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 233
+01/29/2024 11:28:38 AM - INFO - Create ComponentField successfully!test compoennt
+01/29/2024 11:28:38 AM - INFO - This is ComponentField!
+01/29/2024 11:30:46 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:30:48 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 25118
+01/29/2024 11:30:48 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:30:49 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 90
+01/29/2024 11:30:49 AM - INFO - Get target models and components
+01/29/2024 11:30:49 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:30:50 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 509
+01/29/2024 11:30:50 AM - INFO - Get target models and components successfully
+01/29/2024 11:30:50 AM - INFO - Get target models and components
+01/29/2024 11:30:50 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:30:51 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 509
+01/29/2024 11:30:51 AM - INFO - Get target models and components successfully
+01/29/2024 11:30:51 AM - INFO - Start to create model!newTest
+01/29/2024 11:30:51 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:30:52 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 224
+01/29/2024 11:30:57 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:30:59 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 2837
+01/29/2024 11:30:59 AM - INFO - Start to create SimpleField!Avatar
+01/29/2024 11:30:59 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:31:00 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 230
+01/29/2024 11:31:03 AM - INFO - Create simple field successfully!Avatar
+01/29/2024 11:31:03 AM - INFO - This is RelationalField!
+01/29/2024 11:31:03 AM - INFO - Start to create SimpleField!environment
+01/29/2024 11:31:03 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:31:04 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 230
+01/29/2024 11:31:07 AM - INFO - Create simple field successfully!environment
+01/29/2024 11:31:07 AM - INFO - Start to create SimpleField!startDate
+01/29/2024 11:31:07 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:31:08 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 230
+01/29/2024 11:31:11 AM - INFO - Create simple field successfully!startDate
+01/29/2024 11:31:11 AM - INFO - Start to create EnumerationField!Animal
+01/29/2024 11:31:11 AM - INFO - Start to create EnumerableField!Animal
+01/29/2024 11:31:11 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:31:12 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 234
+01/29/2024 11:31:17 AM - INFO - Create enumerable field successfully!Animal
+01/29/2024 11:31:17 AM - INFO - Start to create SimpleField!note
+01/29/2024 11:31:17 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:31:19 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 230
+01/29/2024 11:31:22 AM - INFO - Create simple field successfully!note
+01/29/2024 11:31:22 AM - INFO - Start to create ComponentField!test compoennt
+01/29/2024 11:31:22 AM - INFO - Get target models and components
+01/29/2024 11:31:22 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:31:23 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 5074
+01/29/2024 11:31:23 AM - INFO - Get target models and components successfully
+01/29/2024 11:31:23 AM - INFO - Start to create Component!testComponent
+01/29/2024 11:31:23 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:31:24 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 228
+01/29/2024 11:31:29 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:31:30 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 636
+01/29/2024 11:31:30 AM - INFO - Start to create SimpleField!content
+01/29/2024 11:31:30 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:31:31 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 230
+01/29/2024 11:31:34 AM - INFO - Create simple field successfully!content
+01/29/2024 11:31:34 AM - INFO - Start to create SimpleField!Text
+01/29/2024 11:31:34 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:31:35 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 230
+01/29/2024 11:31:39 AM - INFO - Create simple field successfully!Text
+01/29/2024 11:31:39 AM - INFO - Start to create SimpleField!primarySchoolComposition
+01/29/2024 11:31:39 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:31:40 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 230
+01/29/2024 11:31:43 AM - INFO - Create simple field successfully!primarySchoolComposition
+01/29/2024 11:31:43 AM - INFO - This is UniDirectionalRelationalField!
+01/29/2024 11:31:43 AM - INFO - Start to create ComponentField!test compoennt
+01/29/2024 11:31:43 AM - DEBUG - Starting new HTTPS connection (1): management-ca-central-1.hygraph.com:443
+01/29/2024 11:31:44 AM - DEBUG - https://management-ca-central-1.hygraph.com:443 "POST /graphql HTTP/1.1" 200 233
+01/29/2024 11:31:49 AM - INFO - Create ComponentField successfully!test compoennt
+01/29/2024 11:31:49 AM - INFO - This is ComponentField!
