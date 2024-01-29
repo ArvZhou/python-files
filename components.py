@@ -117,7 +117,7 @@ class ProjectPage(customtkinter.CTkFrame):
         frame = customtkinter.CTkFrame(master=self, width=1000, height=70, fg_color="transparent")
         frame.grid(row=2, column=0, columnspan=2, padx=3, pady=30, sticky="ew")
 
-        button = customtkinter.CTkButton(master=frame, text="Submit", command=self.submit, width=200)
+        button = customtkinter.CTkButton(master=frame, text="Start To Sync", command=self.submit, width=200)
         button.place(relx=0.5, rely=0.5, anchor='center')
 
         button = customtkinter.CTkButton(master=self, text="Import Project Infomation", command=self.choose_file, width=200)

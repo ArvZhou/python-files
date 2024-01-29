@@ -99,3 +99,19 @@ create_component_field_gql = '''
         }
     }
 '''
+
+create_component_union_field_gql = '''
+    mutation CreateComponentUnionField($data: CreateComponentUnionFieldInput!) {
+        createComponentUnionField(data: $data) {
+            migration {
+                createdAt
+                errors
+                finishedAt
+                id
+                name
+                operationType
+                resourceId
+                status
+            }
+        }
+    }'''
