@@ -1,4 +1,5 @@
 from typing import Callable
+import subprocess, sys, os
 import customtkinter
 from tkinter import filedialog
 from utils import get_json
@@ -121,12 +122,18 @@ class ProjectPage(customtkinter.CTkFrame):
         button.place(relx=0.5, rely=0.5, anchor='center')
 
         button = customtkinter.CTkButton(master=self, text="Import Project Infomation", command=self.choose_file, width=200)
-        button.place(x=765, y=15, anchor='w')
+        button.place(x=700, y=15, anchor='w')
+        button = customtkinter.CTkButton(master=self, text="Open Log", command=self.open_log_file, width=50, fg_color="transparent", hover_color="#ccc", text_color="#5b4cff")
+        button.place(x=920, y=15, anchor='w')
     def choose_file(self):
         file_name = filedialog.askopenfilename()
         default_json = get_json(file_name)
         self.share_project_form.set(default_json['SHARE_PROJECT'])
         self.target_project_form.set(default_json['TARGET_PROJECT'])
+    
+    def open_log_file(self):
+        opener = "open" if sys.platform == "darwin" else "xdg-open"
+        subprocess.call([opener, f'{os.path.dirname(os.path.abspath(__file__))}/sync.log'])
 
     def submit(self) -> None:
         self.submit_command(project_info={
