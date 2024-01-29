@@ -1,7 +1,7 @@
 import requests
 import logging
-from gqls.querys  import query_models_and_components_sql, query_model_fields_sql, get_model_by_api_id_sql, get_enumerations_sql
-from gqls.mutations import create_model_gql, create_simple_field_gql, create_enumeration_gql, create_enumeration_field_gql
+from gqls.querys  import query_models_and_components_sql, query_model_fields_sql, get_model_by_api_id_sql, get_enumerations_sql, get_components_sql
+from gqls.mutations import create_model_gql, create_component_gql, create_simple_field_gql, create_enumeration_gql, create_enumeration_field_gql
 from utils import get_match_item
 
 def get_models_and_components(projectId, environment, token, managementUrl):
@@ -12,8 +12,8 @@ def get_models_and_components(projectId, environment, token, managementUrl):
     headers = {"Authorization": f"Bearer {token}"}
     r = requests.post(managementUrl, json=payload, headers=headers).json()
 
-    if(r == None):
-        logging.error('Get models and components failed!' + r)
+    if r.get('errors'):
+        logging.error('Get models and components failed!' + r.get('errors'))
     models = r.get('data').get('viewer').get('project').get('environment').get('contentModel').get('models')
     components = r.get('data').get('viewer').get('project').get('environment').get('contentModel').get('components')
     enumerations = r.get('data').get('viewer').get('project').get('environment').get('contentModel').get('enumerations')
@@ -33,6 +33,8 @@ def get_env_id_by_env_name(projectId, environment, token, managementUrl):
                'variables': { 'projectId': projectId, 'environment': environment } }
     headers = {"Authorization": f"Bearer {token}"}
     r = requests.post(managementUrl, json=payload, headers=headers).json()
+    if r.get('errors'):
+        logging.error('Get environment error \n' + r.get('errors'))
     return r.get('data').get('viewer').get('project').get('environment').get('id')
 
 def create_model(
@@ -56,7 +58,25 @@ def create_model(
         }
     }
     headers = {"Authorization": f"Bearer {token}"}
-    return requests.post(management_url, json=payload, headers=headers).json()
+    r = requests.post(management_url, json=payload, headers=headers).json()
+    if r.get('errors'):
+        logging.error('Create model error \n' + r.get('errors'))
+    return r
+
+def create_component(
+        token,
+        management_url,
+        variables
+):
+    payload = {
+        "query": create_component_gql,
+        'variables': variables
+    }
+    headers = {"Authorization": f"Bearer {token}"}
+    r = requests.post(management_url, json=payload, headers=headers).json()
+    if r.get('errors'):
+        logging.error('Create component error \n' + r.get('errors'))
+    return r
 
 def get_model_fields(
     projectId,
@@ -74,7 +94,10 @@ def get_model_fields(
         }
     }
     headers = {"Authorization": f"Bearer {token}"}
-    return requests.post(management_url, json=payload, headers=headers).json()
+    r = requests.post(management_url, json=payload, headers=headers).json()
+    if r.get('errors'):
+        logging.error('Get model fields error \n' + r.get('errors'))
+    return r
 
 def create_simple_field(
     token,
@@ -86,7 +109,10 @@ def create_simple_field(
         'variables': variables
     }
     headers = {"Authorization": f"Bearer {token}"}
-    return requests.post(management_url, json=payload, headers=headers).json()
+    r = requests.post(management_url, json=payload, headers=headers).json()
+    if r.get('errors'):
+        logging.error('Create simple field error \n' + r.get('errors'))
+    return r
 
 def get_model_by_api_id(
     token,
@@ -99,9 +125,8 @@ def get_model_by_api_id(
     }
     headers = {"Authorization": f"Bearer {token}"}
     r = requests.post(management_url, json=payload, headers=headers).json()
-
-    print(r)
-
+    if r.get('errors'):
+        logging.error('Get model error \n' + r.get('errors'))
     return r.get('data').get('viewer').get('project').get('environment').get('contentModel').get('model')
 
 def create_enumeration(
@@ -113,22 +138,26 @@ def create_enumeration(
         "query": create_enumeration_gql,
         'variables': variables
     }
-    print(variables)
     headers = {"Authorization": f"Bearer {token}"}
-    return requests.post(management_url, json=payload, headers=headers).json()
+    r = requests.post(management_url, json=payload, headers=headers).json()
+    if r.get('errors'):
+            logging.error('Create emunation error \n' + r.get('errors'))
+    return r
 
 def create_enumeration_field(
     token,
     management_url,
     variables
 ):
-    print(variables)
     payload = {
         "query": create_enumeration_field_gql,
         'variables': variables
     }
     headers = {"Authorization": f"Bearer {token}"}
-    return requests.post(management_url, json=payload, headers=headers).json()
+    r = requests.post(management_url, json=payload, headers=headers).json()
+    if r.get('errors'):
+            logging.error('Create emunation filed error \n' + r.get('errors'))
+    return r
 
 def get_enumeration_by_api_id(
     token,
@@ -143,9 +172,29 @@ def get_enumeration_by_api_id(
     headers = {"Authorization": f"Bearer {token}"}
     r = requests.post(management_url, json=payload, headers=headers).json()
 
-    if(r == None):
-        logging.error('Get enumerations failed!' + r)
+    if r.get('errors'):
+        logging.error('Get emunations error \n' + r.get('errors'))
 
     enumerations = r.get('data').get('viewer').get('project').get('environment').get('contentModel').get('enumerations')
 
     return get_match_item(enumerations, apiId)
+
+def get_component_by_api_id(
+    token,
+    management_url,
+    variables,
+    apiId
+):
+    payload = {
+        "query": get_components_sql,
+        'variables': variables
+    }
+    headers = {"Authorization": f"Bearer {token}"}
+    r = requests.post(management_url, json=payload, headers=headers).json()
+
+    if r.get('errors'):
+        logging.error('Get components error \n' + r.get('errors'))
+
+    compoenents = r.get('data').get('viewer').get('project').get('environment').get('contentModel').get('components')
+
+    return get_match_item(compoenents, apiId)

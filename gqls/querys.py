@@ -195,3 +195,51 @@ get_enumerations_sql = '''
         }
     }
 '''
+
+# get_component_by_api_id_sql = '''
+#     query QueryComponent($projectId: ID!, $environment: String!, $apiId: String!) {
+#         viewer {
+#             project(id: $projectId) {
+#                 environment(name: $environment) {
+#                     contentModel {
+#                         component(apiId: $apiId) {
+#                             id
+#                             apiId
+#                             apiIdPlural
+#                             createdAt
+#                             description
+#                             displayName
+#                             isSystem
+#                             isLocalized
+#                             fields(includeApiOnlyFields: false, includeHiddenFields: false) {
+#                                 ...fields
+#                             }
+#                         }
+#                     }
+#                 }
+#             }
+#         }
+#     }
+# ''' + fields
+
+get_components_sql = '''
+    query QueryComponents($projectId: ID!, $environment: String!) {
+        viewer {
+            project(id: $projectId) {
+            environment(name: $environment) {
+                contentModel {
+                    components(includeSystemComponents: false) {
+                        id
+                        apiId
+                        apiIdPlural
+                        displayName
+                        fields(includeApiOnlyFields: false, includeHiddenFields: false) {
+                            ...fields
+                        }
+                    }
+                }
+            }
+            }
+        }
+    }
+''' + fields

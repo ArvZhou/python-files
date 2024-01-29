@@ -4,9 +4,11 @@ __author__ = 'arvin.zhou'
 import re
 import time
 import logging
-from hygraph_utils import get_models_and_components, get_env_id_by_env_name, create_model
-from hygraph_utils import create_simple_field, get_model_by_api_id, create_enumeration
-from hygraph_utils import create_enumeration_field, get_enumeration_by_api_id
+from hygraph_utils import get_models_and_components, get_env_id_by_env_name
+from hygraph_utils import create_model, get_model_by_api_id
+from hygraph_utils import create_component, get_component_by_api_id
+from hygraph_utils import create_enumeration, create_enumeration_field, get_enumeration_by_api_id
+from hygraph_utils import create_simple_field
 from utils import get_match_item
 
 class SyncSchema():
@@ -40,44 +42,77 @@ class SyncSchema():
         )
         self.set_target_models_and_components()
     def set_target_models_and_components(self):
+        logging.info('Get target models and components')
         m_a_c = get_models_and_components(projectId=self.t_p_id, environment=self.t_p_environment, token= self.t_p_token,managementUrl = self.t_p_management_url)
         self.t_p_models=m_a_c['models']
         self.t_p_components=m_a_c['components']
         self.t_p_enumerations=m_a_c['enumerations']
+        logging.info('Get target models and components successfully')
 
     def start_sync(self):
         for model in self.s_p_models:
              if re.match(self.s_p_model_name, model['displayName']):
                  self.clone_model(model)
+        for component in self.s_p_components:
+             if re.match(self.s_p_model_name, component['displayName']):
+                 self.clone_component(component)
     
-    def clone_model(self, shareModel):
-        target_model = get_match_item(self.t_p_models, shareModel['apiId'])
+    def clone_model(self, share_model):
+        self.set_target_models_and_components()
+        target_model = get_match_item(self.t_p_models, share_model['apiId'])
 
         if not(target_model):
-            logging.info('Start to create model!' + shareModel['displayName'])
+            logging.info('Start to create model!' + share_model['displayName'])
 
             create_model(
                 environment_id = self.t_p_env_id,
                 token = self.t_p_token,
                 management_url = self.t_p_management_url,
-                apiId = shareModel['apiId'],
-                apiIdPlural = shareModel['apiIdPlural'],
-                displayName = shareModel['displayName']
+                apiId = share_model['apiId'],
+                apiIdPlural = share_model['apiIdPlural'],
+                displayName = share_model['displayName']
             )
-
             time.sleep(5)
-
             target_model = get_model_by_api_id(
                 token = self.t_p_token,
                 management_url = self.t_p_management_url,
                 variables = {
                     'projectId': self.t_p_id,
                     'environment': self.t_p_environment,
-                    'apiId': shareModel['apiId'],
+                    'apiId': share_model['apiId'],
                 }
             )
             
-        self.clone_all_fields(shareModel['fields'], target_model)
+        self.clone_all_fields(share_model['fields'], target_model)
+
+    def clone_component(self, share_component):
+        self.set_target_models_and_components()
+        target_component = get_match_item(self.t_p_components, share_component['apiId'])
+        if not(target_component):
+            logging.info('Start to create Component!' + share_component['displayName'])
+            create_component(
+                management_url = self.t_p_management_url,
+                token = self.t_p_token,
+                variables = {
+                    "data": {
+                        "environmentId": self.t_p_env_id,
+                        "apiId": share_component['apiId'],
+                        "apiIdPlural": share_component['apiIdPlural'],
+                        "displayName": share_component['displayName']
+                    }
+                }
+            )
+            time.sleep(5)
+            target_component = get_component_by_api_id(
+                token = self.t_p_token,
+                management_url = self.t_p_management_url,
+                variables = {
+                    'projectId': self.t_p_id,
+                    'environment': self.t_p_environment 
+                },
+                apiId = share_component['apiId'],
+            )
+        self.clone_all_fields(share_component['fields'], target_component)
 
     def clone_all_fields(self, allFields, parent):
         for field in allFields:
@@ -188,5 +223,5 @@ class SyncSchema():
         if create_field_result and not(create_field_result.get('errors')):
             logging.info('Create enumerable field successfully!' + field.get('displayName'))
     
-    def clone_component_field(self, field, target_model):
+    def clone_component_field(self, field, target_field):
         logging.info('Start to create ComponentField!' + field.get('displayName'))

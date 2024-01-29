@@ -15,6 +15,23 @@ create_model_gql = '''
     }
 '''
 
+create_component_gql = '''
+    mutation MutationComponent($data: CreateComponentInput!) {
+        createComponent(data: $data) {
+            migration {
+                createdAt
+                errors
+                finishedAt
+                id
+                name
+                operationType
+                resourceId
+                status
+            }
+        }
+    }
+'''
+
 create_simple_field_gql = '''
     mutation CreateSimpleField($data: CreateSimpleFieldInput!) {
         createSimpleField(data: $data) {
