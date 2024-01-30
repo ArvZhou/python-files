@@ -20,9 +20,11 @@ fields = '''
             apiId
             displayName
             union {
+                apiId,
+                displayName
                 memberTypes {
                     parent {
-                    apiId
+                        apiId
                     }
                 }
             }
@@ -36,8 +38,17 @@ fields = '''
             }
         }
         ... on UniDirectionalRelationalField {
+            id
+            relatedModel {
+                apiId
+            }
             apiId
             udrtype: type
+            description
+            displayName
+            isList
+            isHidden
+            isRequired
         }
         ... on RelationalField {
             apiId

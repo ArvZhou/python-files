@@ -133,3 +133,20 @@ create_relational_field_gql = '''
         }
     }
 '''
+
+create_union_field_gql = '''
+    mutation CreateUnionField($data: CreateUnionFieldInput!) {
+        createUnionField(data: $data) {
+            migration {
+                createdAt
+                errors
+                finishedAt
+                id
+                name
+                operationType
+                resourceId
+                status
+            }
+        }
+    }
+'''

@@ -109,7 +109,7 @@ class ProjectPage(customtkinter.CTkFrame):
         super().__init__(*args, width=width, height=height, **kwargs)
         self.configure(fg_color=("transparent"))
         self.submit_command = submit_command
-        self.share_project_form = ProjectInfoForm(master=self, title='Share Project Info', is_share=True)
+        self.share_project_form = ProjectInfoForm(master=self, title='Sharing Project Info', is_share=True)
         self.share_project_form.grid(row=0, column=0, columnspan=1, padx=3, pady=3, sticky="new")
 
         self.target_project_form = ProjectInfoForm(master=self, title='Targrt Project Info')

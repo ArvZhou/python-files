@@ -9,7 +9,7 @@ from hygraph_utils import create_model, get_model_by_api_id
 from hygraph_utils import create_component, get_component_by_api_id
 from hygraph_utils import create_enumeration, get_enumeration_by_api_id
 from hygraph_utils import create_simple_field, create_enumeration_field, create_component_field
-from hygraph_utils import create_component_union_field, create_relational_field
+from hygraph_utils import create_component_union_field, create_relational_field, create_union_field
 from utils import get_match_item
 
 class SyncSchema():
@@ -64,7 +64,7 @@ class SyncSchema():
         self.set_target_models_and_components()
         if share_model['apiId'] in self.current_creating_models:
             logging.error('There is already a same model creating!' + share_model['displayName'] + 'nest components can not be created at the same time!')
-            return None
+            return get_match_item(self.t_p_models, share_model['apiId'])
         self.current_creating_models.append(share_model['apiId'])
         target_model = get_match_item(self.t_p_models, share_model['apiId'])
 
@@ -98,7 +98,7 @@ class SyncSchema():
         self.set_target_models_and_components()
         if share_component['apiId'] in self.current_creating_components:
             logging.error('There is already a same component creating!' + share_component['displayName'] + 'nest components can not be created at the same time!')
-            return None
+            return get_match_item(self.t_p_components, share_component['apiId'])
         self.current_creating_components.append(share_component['apiId'])
         target_component = get_match_item(self.t_p_components, share_component['apiId'])
         if not(target_component):
@@ -322,11 +322,72 @@ class SyncSchema():
 
         if create_relational_field_result and not(create_relational_field_result.get('errors')):
             logging.info('Create relational field successfully!' + field.get('displayName'))
+        return create_relational_field_result
+    def clone_unidirectional_relational_field(self, field, parent):
+        logging.info('Start to create unidirectional relational field!' + field.get('displayName'))
+        share_model = get_match_item(self.s_p_models, field['relatedModel']['apiId'])
+        target_model = self.clone_model(share_model)
+        variables={
+            'data': {
+                'parentId': parent['id'],
+                'apiId': field.get('apiId'),
+                'type': field.get('udrtype'),
+                'displayName': field.get('displayName'),
+                'description': field.get('description') if field.get('description') is not None else '',
+                'reverseSide': {
+                    'modelId': target_model['id']
+                }
+            }
+        }
+
+        for key in ['isRequired', 'isList']:
+            variables['data'][key] = field.get(key) if field.get(key) is not None else False
+
+        create_field_result = create_relational_field(
+            token = self.t_p_token,
+            management_url = self.t_p_management_url,
+            variables = variables
+        )
+        time.sleep(3)
+        if create_field_result and not(create_field_result.get('errors')):
+            logging.info('Create unidirectional relational field successfully!' + field.get('displayName'))
     def clone_union_field(self, field, parent):
         logging.info('Start to create ComponentUnionField!' + field.get('displayName'))
-        print('This is union field!')
+        all_models_ids = []
         print(field)
-    def clone_unidirectional_relational_field(self, field, parent):
-        logging.info('Start to create ComponentUnionField!' + field.get('displayName'))
-        print('This is unidirectional relational field!')
-        print(field)
+        for member in field['union']['memberTypes']:
+            share_model = get_match_item(self.s_p_models, member['parent']['apiId'])
+            target_model = self.clone_model(share_model)
+            all_models_ids.append(target_model['id'])
+        
+        variables = {
+            "data": {
+                "parentId": parent['id'],
+                "apiId": field.get('apiId'),
+                "displayName": field.get('displayName'),
+                "description": field.get('description') if field.get('description') is not None else '',
+                "visibility": field.get('visibility') if field.get('description') is not None else 'READ_WRITE',
+                "isList": field.get('isList') if field.get('isList') is not None else False,
+                "type": "UNION",
+                "reverseSide": {
+                    "apiId": field.get('apiId'),
+                    "displayName": field.get('displayName'),
+                    "isList": field.get('isList') if field.get('isList') is not None else False,
+                },
+                "union": {
+                    "apiId": field['union']['apiId'],
+                    "description": field['union'].get('description') if field['union'].get('description') is not None else '',
+                    "displayName": field['union']['displayName'],
+                    "modelIds": all_models_ids
+                }
+            }
+        }
+
+        create_union_field_result = create_union_field(
+            token = self.t_p_token,
+            management_url = self.t_p_management_url,
+            variables = variables
+        )
+        time.sleep(5)
+        if create_union_field_result and not(create_union_field_result.get('errors')):
+            logging.info('Create ComponentUnionField successfully!' + field.get('displayName'))

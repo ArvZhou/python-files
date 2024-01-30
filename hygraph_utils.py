@@ -2,7 +2,7 @@ import requests
 import logging
 from gqls.querys  import query_models_and_components_sql, query_model_fields_sql, get_model_by_api_id_sql, get_enumerations_sql, get_components_sql
 from gqls.mutations import create_model_gql, create_component_gql, create_simple_field_gql
-from gqls.mutations import create_enumeration_gql, create_enumeration_field_gql, create_component_field_gql, create_component_union_field_gql, create_relational_field_gql
+from gqls.mutations import create_enumeration_gql, create_enumeration_field_gql, create_component_field_gql, create_component_union_field_gql, create_relational_field_gql, create_union_field_gql
 from utils import get_match_item
 
 def get_models_and_components(projectId, environment, token, managementUrl):
@@ -244,3 +244,18 @@ def create_relational_field(
     if r.get('errors'):
             logging.error('Create relational filed error \n' + str(r.get('errors')) + '\n' + str(variables))
     return r
+
+def create_union_field(
+    token,
+    management_url,
+    variables   
+):
+    payload = {
+        "query": create_union_field_gql,
+        'variables': variables
+    }
+    headers = {"Authorization": f"Bearer {token}"}
+    r = requests.post(management_url, json=payload, headers=headers).json()
+    if r.get('errors'):
+            logging.error('Create union filed error \n' + str(r.get('errors')) + '\n' + str(variables))
+    return r 
